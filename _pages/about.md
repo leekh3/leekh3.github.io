@@ -8,7 +8,7 @@ redirect_from:
   - /about.html
 ---
 
-My name is Kyunghun Lee. I'm currently a Postdoctoral Researcher at [the University of Maryland School of Medicine (UMSOM)[(https://www.medschool.umaryland.edu/), working with Professor [Rong Chen](https://www.medschool.umaryland.edu/profiles/Chen-Rong/). 
+My name is Kyunghun Lee. I'm currently a Postdoctoral Researcher at [the University of Maryland School of Medicine (UMSOM)(https://www.medschool.umaryland.edu/), working with Professor [Rong Chen](https://www.medschool.umaryland.edu/profiles/Chen-Rong/). 
 
 Before coming to the University of Maryland School of Medicine, I completed my Ph.D. in [Electrical and Computer Engineering](https://ece.umd.edu/) (2018) at [the University of Maryland, College Park (UMD)](https://umd.edu/) under the supervision of Professor [Shuvra S. Bhattacharyya](https://user.eng.umd.edu/~ssb/). 
 
