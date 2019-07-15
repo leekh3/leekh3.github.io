@@ -19,29 +19,38 @@ My research interests are broadly in the areas of security and privacy. In parti
 <!-- - Mar. 2019: Awarded [the Ann G. Wylie Dissertation Fellowship](https://gradschool.umd.edu/funding/student-fellowships-awards/ann-g-wylie-dissertation-fellowship). -->
 
 ## Selected Publications
-### 2019
-- \[Nature Communication\]: **Microcircuits based Brain States Decoding**.  
-Rong Chen, <span style="color:blue">Kyunghun Lee</span>, Da-Ting Lin, and Shuvra S. Bhattacharyya, will be submitted soon.
+### Conference
 
 - \[IEEE BIOCAS '19\]: **Real-Time Calcium Imaging Based Neural
 Decoding with a Support Vector Machine**.  
 <span style="color:blue">Kyunghun Lee</span>, Yaesop Lee, Da-Ting Lin, Shuvra S. Bhattacharyya, and Rong Chen, submitted.
 
-- \[ACM DAEM\]: **Design and implementation of signal processing systems using datafow schedule graphs**.  
-<span style="color:blue">Kyunghun Lee</span>, Abhay Raina, Yanzhou Liu, Jiahao Wu, Christopher Defrancisci, Benjamin S. Riggan, and Shuvra S. Bhattacharyya, submitted.
-
-### 2018
 - \[IEEE ICASSP '18\]: **[A Joint Target Localization and Classification Framework for Sensor Networks](https://ieeexplore.ieee.org/document/8462641)**. 
 <span style="color:blue">Kyunghun Lee</span>, Benjamin S. Riggan, and Shuvra S. Bhattacharyya.
 
-- \[SOUPS '16\]: **An inconvenient trust: User attitudes toward security and usability tradeoffs for key-directory encryption systems**.  
- Wei Bai, <span style="color:blue">Kyunghun Lee</span>, Moses Namara, Yichen Qian, Patrick Gage Kelley, and Michelle L. Mazurek.  
+- \[EUSIPCO '17\]: **[An Optimized Embedded Target Detection System
+using Acoustic and Seismic Sensors](https://ieeexplore.ieee.org/document/8081355)**. 
+<span style="color:blue">Kyunghun Lee</span>, Benjamin S. Riggan, and Shuvra S. Bhattacharyya. 
 
-- \[IEEE S&P '15\]: **You get where you're looking for: The impact of information sources on code security**.  
-<i class="fas fa-trophy" style="color:#FF0000;"></i> Awarded the 5th annual NSA Best Scientific Cybersecurity Paper.   
-Yasemin Acar, Michael Backes, Sascha Fahl, <span style="color:blue">Kyunghun Lee</span>, Michelle L. Mazurek, and Christian Stransky. (*The authors are alphabetically ordered.*)
+- \[IEEE ASAP '17\]: **[Design and Implementation of Adaptive Signal Processing Systems using Markov Decision Processes](https://ieeexplore.ieee.org/document/7995275)**. 
+Lin Li, Adrian Sapio, Jiahao Wu, Yanzhou Liu, <span style="color:blue">Kyunghun Lee</span>, Marilyn Wolf, and Shuvra Bhattacharyya.
 
+- \[IEEE ICASSP '17\]: **[An accumulative fusion architecture for discriminating people and vehicles using acoustic and seismic signals](https://ieeexplore.ieee.org/document/7952702)**. 
+<span style="color:blue">Kyunghun Lee</span>, Benjamin S. Riggan, and Shuvra S. Bhattacharyya.
 
+- \[ACM CF '16\]: **[Prototyping Real-time Tracking Systems on Mobile Devices](https://dl.acm.org/citation.cfm?doid=2903150.2903471)**. 
+<span style="color:blue">Kyunghun Lee</span>, Kyunghun Lee, Haifa Ben Salem, Thyagaraju Damarla, Walter Stechele, and Shuvra S. Bhattacharyya.
 
+### Journal
 
+- \[Nature Communication\]: **Microcircuits based Brain States Decoding**.  
+Rong Chen, <span style="color:blue">Kyunghun Lee</span>, Da-Ting Lin, and Shuvra S. Bhattacharyya, will be submitted soon.
 
+- \[ACM DAEM\]: **Design and Implementation of Signal Processing Systems using Datafow Schedule Graphs**.  
+<span style="color:blue">Kyunghun Lee</span>, Abhay Raina, Yanzhou Liu, Jiahao Wu, Christopher Defrancisci, Benjamin S. Riggan, and Shuvra S. Bhattacharyya, 2019, submitted.
+
+### Book Chapter
+
+- **[The DSPCAD Framework for Modeling and Synthesis of Signal Processing
+Systems](https://link.springer.com/referenceworkentry/10.1007%2F978-94-017-7267-9_36)**, <span style="color:blue">Kyunghun Lee</span>,
+Handbook of Hardware/Software Codesign, Shuoxin Lin, Yanzhou Liu, <span style="color:blue">Kyunghun Lee</span>, Lin Li, William Plishker, and Shuvra S. Bhattacharyya, Soonhoi Ha and Jürgen Teich, Eds. 2017, Springer.
