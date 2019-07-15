@@ -8,9 +8,9 @@ redirect_from:
   - /about.html
 ---
 
-My name is Kyunghun Lee. I'm currently a Postdoctoral Researcher at [the University of Maryland School of Medicine (UMSOM)(https://www.medschool.umaryland.edu/), working with Professor [Rong Chen](https://www.medschool.umaryland.edu/profiles/Chen-Rong/). 
+My name is Kyunghun Lee. I'm currently a Postdoctoral Researcher at [the University of Maryland School of Medicine (UMSOM)(https://www.medschool.umaryland.edu/), working with [Prof. Rong Chen](https://www.medschool.umaryland.edu/profiles/Chen-Rong/). 
 
-Before coming to the University of Maryland School of Medicine, I completed my Ph.D. in [Electrical and Computer Engineering](https://ece.umd.edu/) (2018) at [the University of Maryland, College Park (UMD)](https://umd.edu/) under the supervision of Professor [Shuvra S. Bhattacharyya](https://user.eng.umd.edu/~ssb/). 
+Before coming to the University of Maryland School of Medicine, I completed my Ph.D. in [Electrical and Computer Engineering](https://ece.umd.edu/) (2018) at [the University of Maryland, College Park (UMD)](https://umd.edu/) under the supervision of [Prof. Shuvra S. Bhattacharyya](https://user.eng.umd.edu/~ssb/). 
 
 My research interests are broadly in the areas of machine learning and software implementations on devices. The topic of my research can be decomposed into two major, inter-related subproblems: (a) algorithm development, which encompasses the development or selection of supervised/unsupervised algorithms and optimization of their parameters, and (b) system development, which involves the mapping of the algorithms derived from (a) into real-time, energy efficient implementations on the targeted platforms. Also, this direction includes the development of model-based digital signal processing software. 
 
