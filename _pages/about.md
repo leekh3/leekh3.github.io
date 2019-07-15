@@ -19,6 +19,7 @@ My research interests are broadly in the areas of security and privacy. In parti
 <!-- - Mar. 2019: Awarded [the Ann G. Wylie Dissertation Fellowship](https://gradschool.umd.edu/funding/student-fellowships-awards/ann-g-wylie-dissertation-fellowship). -->
 
 ## Selected Publications
+### 2019
 - \[Nature Communication\]: **Microcircuits based Brain States Decoding**.  
 Rong Chen, <span style="color:blue">Kyunghun Lee</span>, Da-Ting Lin, and Shuvra S. Bhattacharyya, will be submitted soon.
 
@@ -29,6 +30,7 @@ Decoding with a Support Vector Machine**.
 - \[ACM DAEM\]: **Design and implementation of signal processing systems using datafow schedule graphs**.  
 <span style="color:blue">Kyunghun Lee</span>, Abhay Raina, Yanzhou Liu, Jiahao Wu, Christopher Defrancisci, Benjamin S. Riggan, and Shuvra S. Bhattacharyya, submitted.
 
+### 2018
 - \[IEEE ICASSP '18\]: **[A Joint Target Localization and Classification Framework for Sensor Networks](https://ieeexplore.ieee.org/document/8462641)**. 
 <span style="color:blue">Kyunghun Lee</span>, Benjamin S. Riggan, and Shuvra S. Bhattacharyya.
 
