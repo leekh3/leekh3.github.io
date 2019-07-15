@@ -52,5 +52,4 @@ Rong Chen, <span style="color:blue">Kyunghun Lee</span>, Da-Ting Lin, and Shuvra
 ### Book Chapter
 
 - **[The DSPCAD Framework for Modeling and Synthesis of Signal Processing
-Systems](https://link.springer.com/referenceworkentry/10.1007%2F978-94-017-7267-9_36)**, <span style="color:blue">Kyunghun Lee</span>,
-Handbook of Hardware/Software Codesign, Shuoxin Lin, Yanzhou Liu, <span style="color:blue">Kyunghun Lee</span>, Lin Li, William Plishker, and Shuvra S. Bhattacharyya, Soonhoi Ha and Jürgen Teich, Eds. 2017, Springer.
+Systems](https://link.springer.com/referenceworkentry/10.1007%2F978-94-017-7267-9_36)**, Shuoxin Lin, Yanzhou Liu, <span style="color:blue">Kyunghun Lee</span>, Lin Li, William Plishker, and Shuvra S. Bhattacharyya, Soonhoi Ha and Jürgen Teich, Eds. 2017, Springer.
