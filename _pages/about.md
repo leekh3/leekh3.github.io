@@ -8,9 +8,11 @@ redirect_from:
   - /about.html
 ---
 
-My name is Kyunghun Lee. I'm currently a Postdoctoral Researcher in University of Maryland School of Medicine, working with Professor [Rong Chen](https://www.medschool.umaryland.edu/profiles/Chen-Rong/). 
+My name is Kyunghun Lee. I'm currently a Postdoctoral Researcher at the University of Maryland School of Medicine (UMSOM), working with Professor [Rong Chen](https://www.medschool.umaryland.edu/profiles/Chen-Rong/). 
 
-My research interests are broadly in the areas of security and privacy. In particular, I empirically measure security threats in Public Key Infrastructures (e.g., the code signing PKI and the Web PKI), and design/build new better systems with usable security based on the empirical measurements. I have been awarded [the 5th annual NSA Best Scientific Cybersecurity Paper](https://cps-vo.org/group/sos/papercompetition) in usable security. My work about the code signing PKI has been featured in Ars Technica, The Register, Schneier on Security, Threatpost, etc. 
+Before coming to the University of Maryland School of Medicine, I completed my Ph.D. in Electrical and Computer Engineering (2018) at the University of Maryland, College Park (UMCP) under the supervision of Professor [Shuvra S. Bhattacharyya](https://user.eng.umd.edu/~ssb/). 
+
+My research interests are broadly in the areas of machine learning and software implementations on devices. The topic of my research can be decomposed into two major, inter-related subproblems: (a) algorithm development, which encompasses the development or selection of supervised/unsupervised algorithms and optimization of their parameters, and (b) system development, which involves the mapping of the algorithms derived from (a) into real-time, energy efficient implementations on the targeted platforms. Also, this direction includes the development of model-based digital signal processing software. I have worked with UMSOM and US National Institutes of Health (NIH). From 2014 through 2018, I worked with US Army Research Laboratory as a summer research intern.  I have worked with different datasets for different applications. For example, acoustic and seismic datasets have been used for surveillance applications (UMCP and ARL). Currently, I am working on neural decoding algorithm developments and implementations based on brain-related features and image datasets (UMSOM and NIH).
 
 <!-- My goal is to design/build better systems with usable security based on the emprical measurements of the security threats inherent in current our systems and networks. -->
 
