@@ -27,7 +27,7 @@ I have worked with UMSOM and [US National Institutes of Health (NIH)](https://ww
 
 - \[IEEE BIOCAS '19\]: **Real-Time Calcium Imaging Based Neural
 Decoding with a Support Vector Machine**.  
-<span style="color:blue">Kyunghun Lee</span>, Yaesop Lee, Da-Ting Lin, Shuvra S. Bhattacharyya, and Rong Chen, submitted.
+<span style="color:blue">Kyunghun Lee</span>, Yaesop Lee, Da-Ting Lin, Shuvra S. Bhattacharyya, and Rong Chen, To appear.
 
 - \[IEEE ICASSP '18\]: **[A Joint Target Localization and Classification Framework for Sensor Networks](https://ieeexplore.ieee.org/document/8462641)**. 
 <span style="color:blue">Kyunghun Lee</span>, Benjamin S. Riggan, and Shuvra S. Bhattacharyya.
