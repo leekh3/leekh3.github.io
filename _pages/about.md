@@ -18,8 +18,8 @@ I have worked with UMSOM and [US National Institutes of Health (NIH)](https://ww
 
 <!-- My goal is to design/build better systems with usable security based on the emprical measurements of the security threats inherent in current our systems and networks. -->
 
-<!-- ## News -->
-<!-- - Jun. 2019: Internship at Symantec Research Lab in Culver City. -->
+## News
+- 08/12/2019: Our paper is accepted by BIOCAS2019!
 <!-- - Mar. 2019: Awarded [the Ann G. Wylie Dissertation Fellowship](https://gradschool.umd.edu/funding/student-fellowships-awards/ann-g-wylie-dissertation-fellowship). -->
 
 ## Selected Publications
