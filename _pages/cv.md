@@ -16,6 +16,15 @@ Education
 * M.S. in Electrical and Computer Engineering, University of Maryland, College Park, 2017
 * Ph.D in Electrical and Computer Engineering, University of Maryland, College Park, 2018
 
+Work experience
+======
+* Visiting Research Fellow in National Cancer Institute, NIH, 09/2019-current.
+* Postdoctoral Fellow in University of Maryland School of Medicine, 02/2019-08/2019.
+* Summer Research Intern in US Army Research Laboratory, 2015,2016,2017,2018.
+* Teaching Assistant in University of Maryland, College Park, 2014-2015.
+* Research Assistant in University of Maryland, College Park, 2015-2018.
+* Signal Specialist Solder in Republic of Korea Army (South Korea Army) , 2008-2010.
+
 <!-- Work experience
 ======
 * Summer 2015: Research Assistant
