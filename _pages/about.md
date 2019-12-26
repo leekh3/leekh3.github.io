@@ -19,16 +19,16 @@ My PhD research topics are broadly in the areas of machine learning and software
  -->
 <!-- My goal is to design/build better systems with usable security based on the emprical measurements of the security threats inherent in current our systems and networks. -->
 
-## News
-- 08/12/2019: Our paper is accepted by BIOCAS2019!
+<!-- ## News
+- 08/12/2019: Our paper is accepted by BIOCAS2019! -->
 <!-- - Mar. 2019: Awarded [the Ann G. Wylie Dissertation Fellowship](https://gradschool.umd.edu/funding/student-fellowships-awards/ann-g-wylie-dissertation-fellowship). -->
 
 ## Selected Publications
 ### Conference
 
-- \[IEEE BIOCAS '19\]: **Real-Time Calcium Imaging Based Neural
-Decoding with a Support Vector Machine**.  
-<span style="color:blue">Kyunghun Lee</span>, Yaesop Lee, Da-Ting Lin, Shuvra S. Bhattacharyya, and Rong Chen, To appear.
+- \[IEEE BIOCAS '19\]: **[Real-Time Calcium Imaging Based Neural
+Decoding with a Support Vector Machine](https://ieeexplore.ieee.org/document/8919061)**.  
+<span style="color:blue">Kyunghun Lee</span>, Yaesop Lee, Da-Ting Lin, Shuvra S. Bhattacharyya, and Rong Chen.
 
 - \[IEEE ICASSP '18\]: **[A Joint Target Localization and Classification Framework for Sensor Networks](https://ieeexplore.ieee.org/document/8462641)**. 
 <span style="color:blue">Kyunghun Lee</span>, Benjamin S. Riggan, and Shuvra S. Bhattacharyya.
@@ -48,8 +48,11 @@ Lin Li, Adrian Sapio, Jiahao Wu, Yanzhou Liu, <span style="color:blue">Kyunghun 
 
 ### Journal
 
-- \[Nature Communication\]: **Microcircuits based Brain States Decoding**.  
-Rong Chen, <span style="color:blue">Kyunghun Lee</span>, Da-Ting Lin, and Shuvra S. Bhattacharyya, will be submitted soon.
+- \[Bioinformatics\]: **Data-driven Subtype Detection for Brain Disorders**.  
+Rong Chen, <span style="color:blue">Kyunghun Lee</span>, and  Edward H. Herskovits, 2019, submitted.
+
+- \[Nature Methods\]: **Microcircuits based Brain States Decoding**.  
+Rong Chen, <span style="color:blue">Kyunghun Lee</span>, Da-Ting Lin, and Shuvra S. Bhattacharyya, 2019, will be submitted soon.
 
 - \[ACM DAEM\]: **Design and Implementation of Signal Processing Systems using Datafow Schedule Graphs**.  
 <span style="color:blue">Kyunghun Lee</span>, Abhay Raina, Yanzhou Liu, Jiahao Wu, Christopher Defrancisci, Benjamin S. Riggan, and Shuvra S. Bhattacharyya, 2019, submitted.
