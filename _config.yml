@@ -10,7 +10,7 @@ locale                   : "en-US"
 title                    : "Kyunghun Lee"
 title_separator          : "-"
 name                     : &name "Kyunghun Lee, Ph.D."
-description              : &description "Visiting Research Fellow"
+description              : &description "Visiting Fellow (Machine Learning)"
 url                      : https://leekh3.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "leekh3/leekh3.github.io"
@@ -82,7 +82,7 @@ analytics:
 author:
   name             : "Kyunghun Lee, Ph.D."
   avatar           : "kyunghun.png"
-  bio              : "Visiting Research Fellow"
+  bio              : "Visiting Fellow (Machine Learning)"
   location         : "Bethesda, Maryland"
   employer         : "National Cancer Institute"
   pubmed           : 

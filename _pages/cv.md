@@ -9,12 +9,14 @@ redirect_from:
 
 {% include base_path %}
 
+More details can be found [Here](https://www.linkedin.com/in/kyunghun-lee-662b4265/).
+
 Education
 ======
-* B.S. in Electrical Engineering, Ajou University, 2013
-* B.S. in Electrical Engineering, State University of New York at Stony Brook, 2013
-* M.S. in Electrical and Computer Engineering, University of Maryland, College Park, 2017
 * Ph.D in Electrical and Computer Engineering, University of Maryland, College Park, 2018
+* M.S. in Electrical and Computer Engineering, University of Maryland, College Park, 2017
+* B.S. in Electrical Engineering, State University of New York at Stony Brook, 2013
+* B.S. in Electrical Engineering, Ajou University, 2013
 
 Work experience
 ======
@@ -24,6 +26,8 @@ Work experience
 * Teaching Assistant in University of Maryland, College Park, 2014-2015.
 * Research Assistant in University of Maryland, College Park, 2015-2018.
 * Signal Specialist Solder in Republic of Korea Army (South Korea Army) , 2008-2010.
+
+
 
 <!-- Work experience
 ======
