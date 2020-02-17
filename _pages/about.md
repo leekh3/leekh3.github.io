@@ -8,7 +8,7 @@ redirect_from:
   - /about.html
 ---
 
-My name is Kyunghun Lee. I'm currently a Visiting Research Fellow at High-Throughout Imaging Facility (HiTIF) in [National Cancer Institute (NCI)](https://www.cancer.gov/), [NIH](https://www.nih.gov/), and I am working with [Dr. Gianluca Pegoraro](https://ccr.cancer.gov/Laboratory-of-Receptor-Biology-and-Gene-Expression/gianluca-pegoraro). Here, our team providew CCR investigators with the expertise and the technology needed to set-up, optimize and implement high-content imaging (HCI) assays. HCI assays are used to analyze large numbers of experimental conditions, such as in high-throughput siRNA or chemical compounds screens. In addition, the HiTIF applies HCI in combination with single-cell image and data analysis to quantify exceedingly rare but biologically important events in heterogeneous populations of cells.
+My name is Kyunghun Lee. I'm currently a Visiting Research Fellow (Computer Vision / Machine Learning Software Development) at High-Throughout Imaging Facility (HiTIF) in [National Cancer Institute (NCI)](https://www.cancer.gov/). Here, I have primarily developed image analysis software/algorithms by using image understanding/machine learning/deep learning background such as Mask R-CNN, UNET by using Python-Tensorflow/Keras/OpenCV and KNIME framework. Also, I have worked on data analysis and statistical understanding of different types of dataset. Also, I am helping biologists on the experimental set-up and to assist and help them in every phase of the automated imaging workflow. 
 
 <!-- My name is Kyunghun Lee. I'm currently a Postdoctoral Researcher at [the University of Maryland School of Medicine (UMSOM)](https://www.medschool.umaryland.edu/), working with [Prof. Rong Chen](https://www.medschool.umaryland.edu/profiles/Chen-Rong/).  -->
 Before coming to NCI (NIH), I completed my Ph.D. in [Electrical and Computer Engineering](https://ece.umd.edu/) (2018) at [the University of Maryland, College Park (UMD)](https://umd.edu/) under the supervision of [Prof. Shuvra S. Bhattacharyya](https://user.eng.umd.edu/~ssb/). 
@@ -48,10 +48,10 @@ Lin Li, Adrian Sapio, Jiahao Wu, Yanzhou Liu, <span style="color:blue">Kyunghun 
 
 ### Journal
 
-- \[Bioinformatics\]: **Data-driven Subtype Detection for Brain Disorders**.  
-Rong Chen, <span style="color:blue">Kyunghun Lee</span>, and  Edward H. Herskovits, 2019, submitted.
+- \[NeuroImage\]: **Data-driven Subtype Detection for Brain Disorders**.  
+Rong Chen, <span style="color:blue">Kyunghun Lee</span>, and  Edward H. Herskovits, 2020, submitted.
 
-- \[Nature Methods\]: **Microcircuits based Brain States Decoding**.  
+- \[Bioinformatics\]: **Microcircuits based Brain States Decoding**.  
 Rong Chen, <span style="color:blue">Kyunghun Lee</span>, Da-Ting Lin, and Shuvra S. Bhattacharyya, 2019, will be submitted soon.
 
 - \[ACM DAEM\]: **Design and Implementation of Signal Processing Systems using Datafow Schedule Graphs**.  
