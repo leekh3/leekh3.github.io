@@ -8,10 +8,10 @@ redirect_from:
   - /about.html
 ---
 
-My name is Kyunghun Lee. I'm currently a Visiting Research Fellow (Computer Vision / Machine Learning Software Development) at High-Throughout Imaging Facility (HiTIF) in [National Cancer Institute (NCI)](https://www.cancer.gov/). Here, I have primarily developed image analysis software/algorithms by using image understanding/machine learning/deep learning background such as Mask R-CNN, UNET by using Python-Tensorflow/Keras/OpenCV and KNIME framework. Also, I have worked on data analysis and statistical understanding of different types of dataset. Also, I am helping biologists on the experimental set-up and to assist and help them in every phase of the automated imaging workflow. 
+My name is Kyunghun Lee. I'm currently a Staff Computer Scientist at National Institutes of Health. Here, I have primarily developed image analysis software/algorithms by using image understanding/machine learning/deep learning background such as Mask R-CNN, UNET by using Python-Tensorflow/Keras/OpenCV and KNIME framework.  
 
 <!-- My name is Kyunghun Lee. I'm currently a Postdoctoral Researcher at [the University of Maryland School of Medicine (UMSOM)](https://www.medschool.umaryland.edu/), working with [Prof. Rong Chen](https://www.medschool.umaryland.edu/profiles/Chen-Rong/).  -->
-Before coming to NCI (NIH), I completed my Ph.D. in [Electrical and Computer Engineering](https://ece.umd.edu/) (2018) at [the University of Maryland, College Park (UMD)](https://umd.edu/) under the supervision of [Prof. Shuvra S. Bhattacharyya](https://user.eng.umd.edu/~ssb/). 
+Before coming to NIH, I completed my Ph.D. in [Electrical and Computer Engineering](https://ece.umd.edu/) (2018) at [the University of Maryland, College Park (UMD)](https://umd.edu/) under the supervision of [Prof. Shuvra S. Bhattacharyya](https://user.eng.umd.edu/~ssb/). 
 
 My PhD research topics are broadly in the areas of machine learning and software implementations on devices. The topic of my research can be decomposed into two major, inter-related subproblems: (a) algorithm development, which encompasses the development or selection of supervised/unsupervised algorithms and optimization of their parameters, and (b) system development, which involves the mapping of the algorithms derived from (a) into real-time, energy efficient implementations on the targeted platforms. Also, this direction includes the development of model-based digital signal processing software. 
 
@@ -24,14 +24,37 @@ My PhD research topics are broadly in the areas of machine learning and software
 <!-- - Mar. 2019: Awarded [the Ann G. Wylie Dissertation Fellowship](https://gradschool.umd.edu/funding/student-fellowships-awards/ann-g-wylie-dissertation-fellowship). -->
 
 ## Selected Publications
-### Conference
+### 2020
+
+- \[Cytometry Part A\]: **A Deep Learning Pipeline for Nucleus Segmentation**.  
+George Zaki, Prabhakar R. Gudla, <span style="color:blue">Kyunghun Lee</span>, Justin Kim, Laurent Ozbun, Sigal Shachar, Manasi Gadkari, Jing Sun, Iain D.C. Fraser, Luis M. Franco, Tom Misteli, and Gianluca Pegoraro, submitted.
+
+- \[Advanced Robotics\]: **Real-Time Neural Decoding on Imbalanced Calcium Imaging
+Data with a Network of Support Vector Machines**.  
+<span style="color:blue">Kyunghun Lee</span>, Xiaomin Wu, Yaesop Lee, Da-Ting Lin, Shuvra S. Bhattacharyya, and Rong Chen, 2020, submitted.
+
+- \[NeuroImage\]: **Data-driven Subtype Detection for Brain Disorders**.  
+Rong Chen, <span style="color:blue">Kyunghun Lee</span>, and  Edward H. Herskovits, 2020, submitted.
+
+- \[SNAS\]: **Design and Implementation of Signal Processing Systems using Datafow Schedule Graphs**.  
+<span style="color:blue">Kyunghun Lee</span>, Abhay Raina, Yanzhou Liu, Jiahao Wu, Christopher Defrancisci, Benjamin S. Riggan, and Shuvra S. Bhattacharyya, 2020, submitted.
+
+
+### 2019
+- \[Bioinformatics\]: **Microcircuits based Brain States Decoding**.  
+Rong Chen, <span style="color:blue">Kyunghun Lee</span>, Da-Ting Lin, and Shuvra S. Bhattacharyya, 2019, submitted.
 
 - \[IEEE BIOCAS '19\]: **[Real-Time Calcium Imaging Based Neural
 Decoding with a Support Vector Machine](https://ieeexplore.ieee.org/document/8919061)**.  
 <span style="color:blue">Kyunghun Lee</span>, Yaesop Lee, Da-Ting Lin, Shuvra S. Bhattacharyya, and Rong Chen.
 
+
+### 2018
+
 - \[IEEE ICASSP '18\]: **[A Joint Target Localization and Classification Framework for Sensor Networks](https://ieeexplore.ieee.org/document/8462641)**. 
 <span style="color:blue">Kyunghun Lee</span>, Benjamin S. Riggan, and Shuvra S. Bhattacharyya.
+
+### 2017
 
 - \[EUSIPCO '17\]: **[An Optimized Embedded Target Detection System
 using Acoustic and Seismic Sensors](https://ieeexplore.ieee.org/document/8081355)**. 
@@ -43,21 +66,10 @@ Lin Li, Adrian Sapio, Jiahao Wu, Yanzhou Liu, <span style="color:blue">Kyunghun 
 - \[IEEE ICASSP '17\]: **[An accumulative fusion architecture for discriminating people and vehicles using acoustic and seismic signals](https://ieeexplore.ieee.org/document/7952702)**. 
 <span style="color:blue">Kyunghun Lee</span>, Benjamin S. Riggan, and Shuvra S. Bhattacharyya.
 
-- \[ACM CF '16\]: **[Prototyping Real-time Tracking Systems on Mobile Devices](https://dl.acm.org/citation.cfm?doid=2903150.2903471)**. 
-<span style="color:blue">Kyunghun Lee</span>, Kyunghun Lee, Haifa Ben Salem, Thyagaraju Damarla, Walter Stechele, and Shuvra S. Bhattacharyya.
-
-### Journal
-
-- \[NeuroImage\]: **Data-driven Subtype Detection for Brain Disorders**.  
-Rong Chen, <span style="color:blue">Kyunghun Lee</span>, and  Edward H. Herskovits, 2020, submitted.
-
-- \[Bioinformatics\]: **Microcircuits based Brain States Decoding**.  
-Rong Chen, <span style="color:blue">Kyunghun Lee</span>, Da-Ting Lin, and Shuvra S. Bhattacharyya, 2019, will be submitted soon.
-
-- \[ACM DAEM\]: **Design and Implementation of Signal Processing Systems using Datafow Schedule Graphs**.  
-<span style="color:blue">Kyunghun Lee</span>, Abhay Raina, Yanzhou Liu, Jiahao Wu, Christopher Defrancisci, Benjamin S. Riggan, and Shuvra S. Bhattacharyya, 2019, submitted.
-
-### Book Chapter
-
 - **[The DSPCAD Framework for Modeling and Synthesis of Signal Processing
 Systems](https://link.springer.com/referenceworkentry/10.1007%2F978-94-017-7267-9_36)**, Shuoxin Lin, Yanzhou Liu, <span style="color:blue">Kyunghun Lee</span>, Lin Li, William Plishker, and Shuvra S. Bhattacharyya, Soonhoi Ha and Jürgen Teich, Eds. 2017, Springer.
+
+### 2016
+
+- \[ACM CF '16\]: **[Prototyping Real-time Tracking Systems on Mobile Devices](https://dl.acm.org/citation.cfm?doid=2903150.2903471)**. 
+<span style="color:blue">Kyunghun Lee</span>, Kyunghun Lee, Haifa Ben Salem, Thyagaraju Damarla, Walter Stechele, and Shuvra S. Bhattacharyya.
