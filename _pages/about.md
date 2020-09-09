@@ -33,8 +33,8 @@ George Zaki, Prabhakar R. Gudla, <span style="color:blue">Kyunghun Lee</span>, J
 Data with a Network of Support Vector Machines**.  
 <span style="color:blue">Kyunghun Lee</span>, Xiaomin Wu, Yaesop Lee, Da-Ting Lin, Shuvra S. Bhattacharyya, and Rong Chen, 2020, In revision.
 
-- \[Neuroradiology\]: **DComputational framework for detection of subtypes of neuropsychiatric disorders based on DTI-derived anatomical connectivity**.  
-Rong Chen, <span style="color:blue">Kyunghun Lee</span>, and  Edward H. Herskovits, 2020, Accepted and to appear.
+- \[Neuroradiology\]: **[Computational framework for detection of subtypes of neuropsychiatric disorders based on DTI-derived anatomical connectivity](https://pubmed.ncbi.nlm.nih.gov/32894990/)**.  
+Rong Chen, <span style="color:blue">Kyunghun Lee</span>, and  Edward H. Herskovits, 2020.
 
 - \[SNAS\]: **Design and Implementation of Signal Processing Systems using Datafow Schedule Graphs**.  
 <span style="color:blue">Kyunghun Lee</span>, Abhay Raina, Yanzhou Liu, Jiahao Wu, Christopher Defrancisci, Benjamin S. Riggan, and Shuvra S. Bhattacharyya, 2020, In revision.
