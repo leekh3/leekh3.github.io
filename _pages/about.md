@@ -27,17 +27,17 @@ My PhD research topics are broadly in the areas of machine learning and software
 ### 2020
 
 - \[Cytometry Part A\]: **A Deep Learning Pipeline for Nucleus Segmentation**.  
-George Zaki, Prabhakar R. Gudla, <span style="color:blue">Kyunghun Lee</span>, Justin Kim, Laurent Ozbun, Sigal Shachar, Manasi Gadkari, Jing Sun, Iain D.C. Fraser, Luis M. Franco, Tom Misteli, and Gianluca Pegoraro, submitted.
+George Zaki, Prabhakar R. Gudla, <span style="color:blue">Kyunghun Lee</span>, Justin Kim, Laurent Ozbun, Sigal Shachar, Manasi Gadkari, Jing Sun, Iain D.C. Fraser, Luis M. Franco, Tom Misteli, and Gianluca Pegoraro, In revision.
 
 - \[Advanced Robotics\]: **Real-Time Neural Decoding on Imbalanced Calcium Imaging
 Data with a Network of Support Vector Machines**.  
-<span style="color:blue">Kyunghun Lee</span>, Xiaomin Wu, Yaesop Lee, Da-Ting Lin, Shuvra S. Bhattacharyya, and Rong Chen, 2020, submitted.
+<span style="color:blue">Kyunghun Lee</span>, Xiaomin Wu, Yaesop Lee, Da-Ting Lin, Shuvra S. Bhattacharyya, and Rong Chen, 2020, In revision.
 
-- \[NeuroImage\]: **Data-driven Subtype Detection for Brain Disorders**.  
-Rong Chen, <span style="color:blue">Kyunghun Lee</span>, and  Edward H. Herskovits, 2020, submitted.
+- \[Neuroradiology\]: **DComputational framework for detection of subtypes of neuropsychiatric disorders based on DTI-derived anatomical connectivity**.  
+Rong Chen, <span style="color:blue">Kyunghun Lee</span>, and  Edward H. Herskovits, 2020, Accepted and to appear.
 
 - \[SNAS\]: **Design and Implementation of Signal Processing Systems using Datafow Schedule Graphs**.  
-<span style="color:blue">Kyunghun Lee</span>, Abhay Raina, Yanzhou Liu, Jiahao Wu, Christopher Defrancisci, Benjamin S. Riggan, and Shuvra S. Bhattacharyya, 2020, submitted.
+<span style="color:blue">Kyunghun Lee</span>, Abhay Raina, Yanzhou Liu, Jiahao Wu, Christopher Defrancisci, Benjamin S. Riggan, and Shuvra S. Bhattacharyya, 2020, In revision.
 
 
 ### 2019
