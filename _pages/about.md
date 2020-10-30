@@ -24,8 +24,8 @@ I completed my Ph.D. in [Electrical and Computer Engineering](https://ece.umd.ed
 ## Selected Publications
 ### 2020
 
-- \[Cytometry Part A\]: **A Deep Learning Pipeline for Nucleus Segmentation**.  
-George Zaki, Prabhakar R. Gudla, <span style="color:blue">Kyunghun Lee</span>, Justin Kim, Laurent Ozbun, Sigal Shachar, Manasi Gadkari, Jing Sun, Iain D.C. Fraser, Luis M. Franco, Tom Misteli, and Gianluca Pegoraro, In revision.
+- \[Cytometry Part A\]: **[A Deep Learning Pipeline for Nucleus Segmentation](https://www.biorxiv.org/content/10.1101/2020.04.14.041020v2.full)**.  
+George Zaki, Prabhakar R. Gudla, <span style="color:blue">Kyunghun Lee</span>, Justin Kim, Laurent Ozbun, Sigal Shachar, Manasi Gadkari, Jing Sun, Iain D.C. Fraser, Luis M. Franco, Tom Misteli, and Gianluca Pegoraro, To appear.
 
 - \[Advanced Robotics\]: **Real-Time Neural Decoding on Imbalanced Calcium Imaging
 Data with a Network of Support Vector Machines**.  
