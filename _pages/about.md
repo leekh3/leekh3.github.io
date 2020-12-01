@@ -29,7 +29,7 @@ George Zaki, Prabhakar R. Gudla, <span style="color:blue">Kyunghun Lee</span>, J
 
 - \[Advanced Robotics\]: **Real-Time Neural Decoding on Imbalanced Calcium Imaging
 Data with a Network of Support Vector Machines**.  
-<span style="color:blue">Kyunghun Lee</span>, Xiaomin Wu, Yaesop Lee, Da-Ting Lin, Shuvra S. Bhattacharyya, and Rong Chen, 2020, In revision.
+<span style="color:blue">Kyunghun Lee</span>, Xiaomin Wu, Yaesop Lee, Da-Ting Lin, Shuvra S. Bhattacharyya, and Rong Chen, 2020, To appear.
 
 - \[Neuroradiology\]: **[Computational framework for detection of subtypes of neuropsychiatric disorders based on DTI-derived anatomical connectivity](https://pubmed.ncbi.nlm.nih.gov/32894990/)**.  
 Rong Chen, <span style="color:blue">Kyunghun Lee</span>, and  Edward H. Herskovits, 2020.
