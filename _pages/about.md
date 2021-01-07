@@ -27,15 +27,15 @@ I completed my Ph.D. in [Electrical and Computer Engineering](https://ece.umd.ed
 - \[Cytometry Part A\]: **[A Deep Learning Pipeline for Nucleus Segmentation](https://onlinelibrary.wiley.com/doi/abs/10.1002/cyto.a.24257)**.  
 George Zaki, Prabhakar R. Gudla, <span style="color:blue">Kyunghun Lee</span>, Justin Kim, Laurent Ozbun, Sigal Shachar, Manasi Gadkari, Jing Sun, Iain D.C. Fraser, Luis M. Franco, Tom Misteli, and Gianluca Pegoraro.
 
-- \[Advanced Robotics\]: **Real-Time Neural Decoding on Imbalanced Calcium Imaging
-Data with a Network of Support Vector Machines**.  
-<span style="color:blue">Kyunghun Lee</span>, Xiaomin Wu, Yaesop Lee, Da-Ting Lin, Shuvra S. Bhattacharyya, and Rong Chen, 2020, To appear.
+- \[Advanced Robotics\]: **[Real-Time Neural Decoding on Imbalanced Calcium Imaging
+Data with a Network of Support Vector Machines](https://doi.org/10.1080/01691864.2020.1863259)**.  
+<span style="color:blue">Kyunghun Lee</span>, Xiaomin Wu, Yaesop Lee, Da-Ting Lin, Shuvra S. Bhattacharyya, and Rong Chen, 2020.
 
 - \[Neuroradiology\]: **[Computational framework for detection of subtypes of neuropsychiatric disorders based on DTI-derived anatomical connectivity](https://pubmed.ncbi.nlm.nih.gov/32894990/)**.  
 Rong Chen, <span style="color:blue">Kyunghun Lee</span>, and  Edward H. Herskovits, 2020.
 
 - \[SNAS\]: **Design and Implementation of Signal Processing Systems using Datafow Schedule Graphs**.  
-<span style="color:blue">Kyunghun Lee</span>, Abhay Raina, Yanzhou Liu, Jiahao Wu, Christopher Defrancisci, Benjamin S. Riggan, and Shuvra S. Bhattacharyya, 2020, In revision.
+<span style="color:blue">Kyunghun Lee</span>, Abhay Raina, Yanzhou Liu, Jiahao Wu, Christopher Defrancisci, Benjamin S. Riggan, and Shuvra S. Bhattacharyya, 2020, To appear.
 
 
 ### 2019
