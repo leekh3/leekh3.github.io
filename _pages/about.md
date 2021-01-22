@@ -27,6 +27,10 @@ After my Ph.D., I worked as a postdoctoral fellow (Diagnostic Radiology and Nucl
 <!-- - Mar. 2019: Awarded [the Ann G. Wylie Dissertation Fellowship](https://gradschool.umd.edu/funding/student-fellowships-awards/ann-g-wylie-dissertation-fellowship). -->
 
 ## Selected Publications
+### 2021
+- \[SNAS\]: **[Design and Implementation of Signal Processing Systems using Datafow Schedule Graphs](https://doi.org/10.1007/s42452-020-04135-6)**.  
+<span style="color:blue">Kyunghun Lee</span>, Abhay Raina, Yanzhou Liu, Jiahao Wu, Christopher Defrancisci, Benjamin S. Riggan, and Shuvra S. Bhattacharyya, 2021.
+
 ### 2020
 
 - \[Cytometry Part A\]: **[A Deep Learning Pipeline for Nucleus Segmentation](https://onlinelibrary.wiley.com/doi/abs/10.1002/cyto.a.24257)**.  
@@ -38,9 +42,6 @@ Data with a Network of Support Vector Machines](https://doi.org/10.1080/01691864
 
 - \[Neuroradiology\]: **[Computational framework for detection of subtypes of neuropsychiatric disorders based on DTI-derived anatomical connectivity](https://pubmed.ncbi.nlm.nih.gov/32894990/)**.  
 Rong Chen, <span style="color:blue">Kyunghun Lee</span>, and  Edward H. Herskovits, 2020.
-
-- \[SNAS\]: **Design and Implementation of Signal Processing Systems using Datafow Schedule Graphs**.  
-<span style="color:blue">Kyunghun Lee</span>, Abhay Raina, Yanzhou Liu, Jiahao Wu, Christopher Defrancisci, Benjamin S. Riggan, and Shuvra S. Bhattacharyya, 2020, To appear.
 
 
 ### 2019
