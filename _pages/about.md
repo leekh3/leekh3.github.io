@@ -8,7 +8,7 @@ redirect_from:
   - /about.html
 ---
 
-My name is Kyunghun Lee.  I am a scientist at the National Institute of Health and I am working with [Dr. Daniel Pine](https://www.nimh.nih.gov/research/research-conducted-at-nimh/principal-investigators/daniel-pine.shtml). 
+My name is Kyunghun Lee.  I am a scientist at the National Institute of Health and I am working with [Dr. Daniel Pine](https://www.nimh.nih.gov/research/research-conducted-at-nimh/principal-investigators/daniel-pine.shtml) and [Dr. Melissa Brotman](https://www.nimh.nih.gov/research/research-conducted-at-nimh/research-areas/clinics-and-labs/edb/nnt/dr-melissa-brotman-biography.shtml). 
 Here, I am working on computational analysis and software design in the lab and helping NIH researchers in every phase of the automated software workflow to use neuroscience to identify treatment targets. Also, I am working on software/algorithm development based on real-time information from wearable devices.
 
 <!-- While completing my Ph.D. at the University of Maryland, I researched machine learning, software/hardware optimization, and automatic detection and classification system development .  -->
@@ -45,8 +45,8 @@ Rong Chen, <span style="color:blue">Kyunghun Lee</span>, and  Edward H. Herskovi
 
 
 ### 2019
-- \[Bioinformatics\]: **Microcircuits based Brain States Decoding**.  
-Rong Chen, <span style="color:blue">Kyunghun Lee</span>, Da-Ting Lin, and Shuvra S. Bhattacharyya, 2019, submitted.
+<!-- - \[Bioinformatics\]: **Microcircuits based Brain States Decoding**.   -->
+<!-- Rong Chen, <span style="color:blue">Kyunghun Lee</span>, Da-Ting Lin, and Shuvra S. Bhattacharyya, 2019, submitted. -->
 
 - \[IEEE BIOCAS '19\]: **[Real-Time Calcium Imaging Based Neural
 Decoding with a Support Vector Machine](https://ieeexplore.ieee.org/document/8919061)**.  
