@@ -28,6 +28,10 @@ After my Ph.D., I worked as a postdoctoral fellow (Diagnostic Radiology and Nucl
 
 ## Selected Publications
 ### 2021
+- \[IJMPR\]: **[Cardiovascular reactivity as a measure of irritability in a transdiagnostic sample of youth: Preliminary associations](https://onlinelibrary.wiley.com/doi/full/10.1002/mpr.1890)**.  
+Reut Naim., M. S. Goodwin, K. Dombek, O. Revzina, C. Agorsor, <span style="color:blue">Kyunghun Lee</span>, et al. 2021.
+
+
 - \[SNAS\]: **[Design and Implementation of Signal Processing Systems using Datafow Schedule Graphs](https://doi.org/10.1007/s42452-020-04135-6)**.  
 <span style="color:blue">Kyunghun Lee</span>, Abhay Raina, Yanzhou Liu, Jiahao Wu, Christopher Defrancisci, Benjamin S. Riggan, and Shuvra S. Bhattacharyya, 2021.
 

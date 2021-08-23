@@ -15,8 +15,8 @@ Education
 ======
 * Ph.D in Electrical and Computer Engineering, University of Maryland, College Park, 2018
 * M.S. in Electrical and Computer Engineering, University of Maryland, College Park, 2017
-* B.S. in Electrical Engineering, State University of New York at Stony Brook, 2013
-* B.S. in Electrical Engineering, Ajou University, 2013
+<!-- * B.S. in Electrical Engineering, State University of New York at Stony Brook, 2013 -->
+<!-- * B.S. in Electrical Engineering, Ajou University, 2013 -->
 
 Work experience
 ======
