@@ -20,13 +20,13 @@ Education
 
 Work experience
 ======
-* Staff Computer Scientist in National Institutes of Health (NIH) (C), 05/2019-.
-* Visiting Research Fellow in National Institutes of Health (NIH), 09/2019-05/2020.
-* Postdoctoral Fellow in University of Maryland School of Medicine, 02/2019-08/2019.
-* Summer Research Intern in US Army Research Laboratory, 2015,2016,2017,2018.
-* Teaching Assistant in University of Maryland, College Park, 2014-2015.
-* Research Assistant in University of Maryland, College Park, 2015-2018.
-* Signal Specialist Solder in Republic of Korea Army (South Korea Army) , 2008-2010.
+* Staff Computer Scientist, National Institutes of Health (NIH) (C), 05/2019-.
+* Visiting Research Fellow, National Institutes of Health (NIH), 09/2019-05/2020.
+* Postdoctoral Fellow, University of Maryland School of Medicine, 02/2019-08/2019.
+* Summer Research Intern, US Army Research Laboratory, 2015,2016,2017,2018.
+* Teaching Assistant, University of Maryland, College Park, 2014-2015.
+* Research Assistant, University of Maryland, College Park, 2015-2018.
+* Signal Specialist Solder, Republic of Korea Army (South Korea Army) , 2008-2010.
 
 
 
