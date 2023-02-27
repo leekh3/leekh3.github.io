@@ -9,7 +9,7 @@ redirect_from:
 ---
 
 
-My name is Kyunghun Lee, and I'm a staff scientist at the National Institute of Health, working alongside [Dr. Daniel Pine](https://www.nimh.nih.gov/research/research-conducted-at-nimh/principal-investigators/daniel-pine.shtml) and [Dr. Melissa Brotman](https://www.nimh.nih.gov/research/research-conducted-at-nimh/research-areas/clinics-and-labs/edb/nnt/dr-melissa-brotman-biography.shtml). In the lab, I focus on computational analysis and software design, and I assist NIH researchers at every stage of the automated software workflow. My work helps identify treatment targets using neuroscience, and I'm also involved in software and algorithm development based on real-time data from wearable devices / iPhone.
+My name is Kyunghun Lee, and I'm a staff scientist at [Emotion and Development Branch (EDB)](https://www.nimh.nih.gov/research/research-conducted-at-nimh/research-areas/clinics-and-labs/edb) at the National Institute of Health, working alongside [Dr. Daniel Pine](https://www.nimh.nih.gov/research/research-conducted-at-nimh/principal-investigators/daniel-pine.shtml) and [Dr. Melissa Brotman](https://www.nimh.nih.gov/research/research-conducted-at-nimh/research-areas/clinics-and-labs/edb/nnt/dr-melissa-brotman-biography.shtml). In the lab, I focus on computational analysis and software design, and I assist NIH researchers at every stage of the automated software workflow. My work helps identify treatment targets using neuroscience, and I'm also involved in software and algorithm development based on real-time data from wearable devices / iPhone.
 
 
 
