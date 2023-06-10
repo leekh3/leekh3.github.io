@@ -10,7 +10,7 @@ locale                   : "en-US"
 title                    : "Kyunghun Lee"
 title_separator          : "-"
 name                     : &name "Kyunghun Lee, Ph.D."
-description              : &description "Computer Scientist"
+description              : &description "Staff Scientist"
 url                      : https://leekh3.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "leekh3/leekh3.github.io"
@@ -86,7 +86,7 @@ author:
   location         : "Bethesda, Maryland"
   employer         : "National Institutes of Health"
   pubmed           : 
-  googlescholar    : "https://scholar.google.com/citations?user=l7mEMJUAAAAJ&hl=en"
+  googlescholar    : # "https://scholar.google.com/citations?user=l7mEMJUAAAAJ&hl=en"
   email            : "leekyh3@gmail.com"
   researchgate     :  # example: "https://www.researchgate.net/profile/yourprofile"
   uri              :
