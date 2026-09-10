@@ -625,8 +625,9 @@
     const root = document.documentElement;
     const themeButton = document.getElementById('theme');
     const savedTheme = localStorage.getItem('theme');
-    const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-    root.dataset.theme = savedTheme || (prefersDark ? 'dark' : 'light');
+    // Dark is the default on first visit; user choice is remembered afterward.
+    root.dataset.theme = savedTheme || 'dark';
+    document.querySelector('meta[name="theme-color"]').setAttribute('content', root.dataset.theme === 'dark' ? '#0b0c0a' : '#f7f7f2');
 
     themeButton.addEventListener('click', () => {
       const next = root.dataset.theme === 'dark' ? 'light' : 'dark';
