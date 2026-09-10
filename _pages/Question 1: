@@ -1,8 +1,0 @@
-Question 1:
-Create a class named "Circle" with a private member variable "radius". The class should have a constructor to set the radius and member functions to calculate the area and circumference of the circle.
-
-Question 2:
-Create a class named "Student" with private member variables "name" and "age". The class should have a constructor to set the name and age and member functions to display the name and age of the student.
-
-Q3.
-Create a class called "Animal" with the following attributes: name and type. Write a constructor that takes in values for both attributes, and write a method that outputs the animal's name and type. Create two subclasses called "Dog" and "Cat" that inherit from "Animal". Implement the constructor and method for both subclasses.

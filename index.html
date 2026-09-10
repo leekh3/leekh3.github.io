@@ -1,0 +1,465 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Kyunghun Lee, Ph.D. — Computational Scientist & Engineer. Staff Scientist at NIMH and Visiting Professor at the University of Maryland.">
+  <title>Kyunghun Lee — Computational Scientist & Engineer</title>
+  <meta name="theme-color" content="#f7f7f2">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #f7f7f2;
+      --paper: #fbfbf8;
+      --ink: #11120f;
+      --muted: #6e7069;
+      --faint: #a1a39a;
+      --line: #d9dbd2;
+      --line-strong: #c9cbc1;
+      --accent: #171812;
+      --max: 1180px;
+      --mono: "DM Mono", ui-monospace, SFMono-Regular, Menlo, monospace;
+      --sans: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      --ease: cubic-bezier(.2,.7,.2,1);
+    }
+
+    html[data-theme="dark"] {
+      --bg: #0b0c0a;
+      --paper: #10110f;
+      --ink: #f2f2ed;
+      --muted: #a1a49c;
+      --faint: #74776f;
+      --line: #2a2d27;
+      --line-strong: #3b3e38;
+      --accent: #f2f2ed;
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--ink);
+      font-family: var(--sans);
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+      text-rendering: optimizeLegibility;
+      transition: background-color .25s ease, color .25s ease;
+    }
+
+    a { color: inherit; text-decoration: none; }
+    img { max-width: 100%; display: block; }
+    .shell { width: min(calc(100% - 48px), var(--max)); margin: 0 auto; }
+
+    .topbar {
+      position: sticky;
+      top: 0;
+      z-index: 20;
+      border-bottom: 1px solid color-mix(in srgb, var(--line) 88%, transparent);
+      background: color-mix(in srgb, var(--bg) 90%, transparent);
+      backdrop-filter: blur(14px);
+    }
+
+    .nav { height: 72px; display: flex; align-items: center; justify-content: space-between; }
+    .wordmark { font-size: 14px; font-weight: 600; letter-spacing: -.02em; }
+    .nav-right { display: flex; align-items: center; gap: 24px; }
+    .navlinks { display: flex; gap: 22px; color: var(--muted); font-size: 13px; }
+    .navlinks a { transition: color .18s ease; }
+    .navlinks a:hover { color: var(--ink); }
+    .theme {
+      width: 34px; height: 34px; padding: 0; border: 1px solid var(--line); background: transparent;
+      color: var(--ink); border-radius: 50%; cursor: pointer; display: grid; place-items: center;
+      font-family: var(--mono); font-size: 12px;
+    }
+
+    main { overflow: hidden; }
+    .hero {
+      min-height: calc(100vh - 72px);
+      display: grid;
+      grid-template-columns: 1.28fr .72fr;
+      gap: 72px;
+      align-items: end;
+      padding: 120px 0 86px;
+      border-bottom: 1px solid var(--line);
+    }
+    .kicker { font-family: var(--mono); font-size: 12px; color: var(--muted); letter-spacing: .03em; margin-bottom: 24px; }
+    h1 {
+      margin: 0 0 24px;
+      font-size: clamp(56px, 8vw, 106px);
+      line-height: .96;
+      letter-spacing: -.065em;
+      font-weight: 600;
+      max-width: 820px;
+    }
+    .hero-copy {
+      max-width: 690px;
+      font-size: clamp(18px, 2.2vw, 25px);
+      line-height: 1.44;
+      letter-spacing: -.02em;
+      color: var(--muted);
+    }
+    .hero-copy strong { color: var(--ink); font-weight: 500; }
+
+    .hero-meta { border-left: 1px solid var(--line); padding-left: 28px; }
+    .portrait {
+      width: 112px; height: 112px; border-radius: 16px; object-fit: cover; object-position: center top;
+      filter: grayscale(100%); opacity: .9; margin-bottom: 30px;
+    }
+    .meta-block { margin-bottom: 28px; }
+    .meta-label { font-family: var(--mono); font-size: 10px; letter-spacing: .08em; text-transform: uppercase; color: var(--faint); margin-bottom: 7px; }
+    .meta-value { font-size: 14px; line-height: 1.55; }
+    .meta-value + .meta-value { margin-top: 3px; }
+
+    .jump { display: inline-flex; align-items: center; gap: 8px; margin-top: 18px; font-family: var(--mono); font-size: 12px; color: var(--muted); }
+    .jump::after { content: "↘"; color: var(--ink); }
+
+    section { border-bottom: 1px solid var(--line); }
+    .section-grid {
+      display: grid; grid-template-columns: 240px 1fr; gap: 64px; padding: 94px 0;
+    }
+    .section-index { font-family: var(--mono); font-size: 11px; color: var(--faint); padding-top: 5px; }
+    .section-title { font-size: 18px; font-weight: 500; margin: 0; letter-spacing: -.02em; }
+    .section-lead { font-size: 20px; line-height: 1.55; max-width: 820px; margin: 0 0 44px; letter-spacing: -.018em; }
+
+    .statement {
+      padding: 28px 0 0;
+      border-top: 1px solid var(--line);
+      display: grid; grid-template-columns: 1fr 1fr; gap: 56px;
+    }
+    .statement p { margin: 0; color: var(--muted); font-size: 15px; }
+    .statement strong { color: var(--ink); font-weight: 500; }
+
+    .worklist { border-top: 1px solid var(--line); }
+    .work-row {
+      display: grid; grid-template-columns: 54px 190px 1fr 120px; gap: 24px; align-items: start;
+      padding: 25px 0; border-bottom: 1px solid var(--line); transition: padding .2s var(--ease);
+    }
+    .work-row:hover { padding-left: 8px; }
+    .work-no { font-family: var(--mono); font-size: 11px; color: var(--faint); padding-top: 4px; }
+    .work-name { font-size: 16px; font-weight: 500; }
+    .work-desc { color: var(--muted); font-size: 14px; max-width: 700px; }
+    .work-tag { font-family: var(--mono); font-size: 10px; color: var(--faint); text-align: right; padding-top: 4px; }
+
+    .principles { display: grid; grid-template-columns: repeat(3, 1fr); border-top: 1px solid var(--line); }
+    .principle { padding: 28px 30px 0 0; min-height: 220px; }
+    .principle + .principle { border-left: 1px solid var(--line); padding-left: 30px; }
+    .principle-no { font-family: var(--mono); font-size: 10px; color: var(--faint); margin-bottom: 35px; }
+    .principle h3 { margin: 0 0 12px; font-size: 18px; font-weight: 500; letter-spacing: -.02em; }
+    .principle p { margin: 0; color: var(--muted); font-size: 14px; line-height: 1.7; }
+
+    .timeline { border-top: 1px solid var(--line); }
+    .timeline-row { display: grid; grid-template-columns: 180px 1fr; gap: 42px; padding: 28px 0; border-bottom: 1px solid var(--line); }
+    .timeline-date { font-family: var(--mono); font-size: 11px; color: var(--faint); padding-top: 4px; }
+    .timeline-role { margin: 0 0 5px; font-size: 17px; font-weight: 500; letter-spacing: -.02em; }
+    .timeline-org { margin: 0 0 10px; font-size: 13px; color: var(--muted); }
+    .timeline-detail { margin: 0; color: var(--muted); font-size: 14px; max-width: 820px; }
+
+    .teaching {
+      margin-top: 28px; padding: 20px 0 0; border-top: 1px solid var(--line);
+      display: flex; justify-content: space-between; gap: 40px;
+    }
+    .teaching-copy { max-width: 760px; }
+    .teaching-copy p { margin: 0; color: var(--muted); font-size: 14px; }
+    .teaching-badge { font-family: var(--mono); font-size: 11px; color: var(--faint); white-space: nowrap; }
+
+    .links { display: flex; flex-wrap: wrap; gap: 10px 22px; }
+    .link { font-family: var(--mono); font-size: 11px; border-bottom: 1px solid var(--line-strong); padding-bottom: 3px; }
+    .link:hover { border-color: var(--ink); }
+
+    .contact {
+      display: grid; grid-template-columns: 1fr auto; gap: 50px; align-items: end; padding: 100px 0 110px;
+    }
+    .contact h2 { margin: 0 0 18px; font-size: clamp(36px, 5vw, 64px); line-height: 1; letter-spacing: -.055em; font-weight: 600; }
+    .contact p { margin: 0; color: var(--muted); max-width: 670px; font-size: 17px; }
+    .contact-actions { display: flex; flex-direction: column; align-items: flex-start; gap: 12px; }
+    .email-link { font-size: 16px; font-weight: 500; border-bottom: 1px solid var(--ink); padding-bottom: 4px; }
+    .small-note { font-family: var(--mono); font-size: 10px; color: var(--faint); }
+
+    footer { padding: 30px 0 50px; display: flex; justify-content: space-between; gap: 20px; color: var(--faint); font-family: var(--mono); font-size: 10px; }
+
+    .reveal { opacity: 0; transform: translateY(12px); transition: opacity .65s var(--ease), transform .65s var(--ease); }
+    .reveal.visible { opacity: 1; transform: none; }
+
+    @media (max-width: 860px) {
+      .shell { width: min(calc(100% - 34px), var(--max)); }
+      .navlinks { display: none; }
+      .hero { grid-template-columns: 1fr; gap: 54px; min-height: auto; padding: 84px 0 64px; }
+      .hero-meta { border-left: 0; border-top: 1px solid var(--line); padding: 28px 0 0; display: grid; grid-template-columns: 112px 1fr; gap: 24px; }
+      .portrait { margin-bottom: 0; }
+      .meta-block { margin-bottom: 20px; }
+      .meta-stack { grid-column: 2; }
+      .section-grid { grid-template-columns: 1fr; gap: 24px; padding: 70px 0; }
+      .section-index { padding-top: 0; }
+      .statement { grid-template-columns: 1fr; gap: 22px; }
+      .work-row { grid-template-columns: 36px 1fr; gap: 8px 16px; }
+      .work-tag { display: none; }
+      .work-desc { grid-column: 2; }
+      .principles { grid-template-columns: 1fr; }
+      .principle, .principle + .principle { border-left: 0; border-top: 1px solid var(--line); padding: 28px 0; min-height: auto; }
+      .principle:first-child { border-top: 0; }
+      .timeline-row { grid-template-columns: 1fr; gap: 9px; }
+      .teaching, .contact, footer { grid-template-columns: 1fr; display: grid; }
+      .contact-actions { align-items: flex-start; }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      .reveal { opacity: 1; transform: none; transition: none; }
+      .work-row { transition: none; }
+    }
+  </style>
+</head>
+<body>
+  <header class="topbar">
+    <div class="shell nav">
+      <a class="wordmark" href="#top">Kyunghun Lee</a>
+      <div class="nav-right">
+        <nav class="navlinks" aria-label="Primary navigation">
+          <a href="#work">Work</a>
+          <a href="#thinking">Thinking</a>
+          <a href="#experience">Experience</a>
+          <a href="#links">Links</a>
+          <a href="#contact">Contact</a>
+        </nav>
+        <button class="theme" id="theme" aria-label="Toggle color theme">◐</button>
+      </div>
+    </div>
+  </header>
+
+  <main id="top">
+    <div class="shell">
+      <section class="hero reveal">
+        <div>
+          <div class="kicker">COMPUTATIONAL SCIENTIST &amp; ENGINEER</div>
+          <h1>Build systems that hold up.</h1>
+          <p class="hero-copy">
+            I work where <strong>algorithms, scientific software, AI/ML, and real-world constraints</strong> meet — designing computational systems that are explainable, efficient, and built to be verified.
+          </p>
+          <a class="jump" href="#work">See the technical lens</a>
+        </div>
+
+        <aside class="hero-meta">
+          <img class="portrait" src="https://leekh3.github.io/images/kyunghun.png" alt="Kyunghun Lee">
+          <div class="meta-stack">
+            <div class="meta-block">
+              <div class="meta-label">Current</div>
+              <div class="meta-value">Staff Scientist</div>
+              <div class="meta-value">National Institute of Mental Health · NIH</div>
+            </div>
+            <div class="meta-block">
+              <div class="meta-label">Also</div>
+              <div class="meta-value">Visiting Professor</div>
+              <div class="meta-value">University of Maryland</div>
+            </div>
+            <div class="meta-block">
+              <div class="meta-label">Base</div>
+              <div class="meta-value">Maryland · United States</div>
+            </div>
+          </div>
+        </aside>
+      </section>
+
+      <section id="work" class="reveal">
+        <div class="section-grid">
+          <div class="section-index">01 / WORK</div>
+          <div>
+            <h2 class="section-title">A technical lens across layers</h2>
+            <p class="section-lead">The interesting problems are rarely confined to one layer. I move between the algorithm, the data, the device, and the software — and try to keep the whole system legible.</p>
+
+            <div class="worklist">
+              <div class="work-row">
+                <div class="work-no">01</div>
+                <div class="work-name">Algorithms</div>
+                <div class="work-desc">Data structures, algorithmic complexity, signal processing, detection, classification, and reasoning about the shape of a workload before choosing an implementation.</div>
+                <div class="work-tag">CORE</div>
+              </div>
+              <div class="work-row">
+                <div class="work-no">02</div>
+                <div class="work-name">Scientific Software</div>
+                <div class="work-desc">Turning research questions into maintainable software — from computational analysis and prototypes to tools that can be used repeatedly and explained clearly.</div>
+                <div class="work-tag">SYSTEMS</div>
+              </div>
+              <div class="work-row">
+                <div class="work-no">03</div>
+                <div class="work-name">Real-time &amp; Edge</div>
+                <div class="work-desc">Working under device, memory, latency, power, and data-stream constraints, with wearable and embedded systems as real-world testbeds.</div>
+                <div class="work-tag">PHYSICAL</div>
+              </div>
+              <div class="work-row">
+                <div class="work-no">04</div>
+                <div class="work-name">AI / ML</div>
+                <div class="work-desc">Machine learning and neural methods applied to high-dimensional, multimodal, and behavioral data — with an emphasis on useful systems rather than models in isolation.</div>
+                <div class="work-tag">INTELLIGENCE</div>
+              </div>
+              <div class="work-row">
+                <div class="work-no">05</div>
+                <div class="work-name">AI-assisted Engineering</div>
+                <div class="work-desc">Using AI where it creates leverage — generation, exploration, testing, debugging, and automation — while keeping architecture, constraints, and final judgment in human hands.</div>
+                <div class="work-tag">EMERGING</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="thinking" class="reveal">
+        <div class="section-grid">
+          <div class="section-index">02 / THINKING</div>
+          <div>
+            <h2 class="section-title">Engineering is constraint management</h2>
+            <p class="section-lead">A theoretically elegant implementation is not automatically the right implementation. Hardware, data volume, latency, memory, reliability, and the cost of being wrong all change the answer.</p>
+
+            <div class="principles">
+              <article class="principle">
+                <div class="principle-no">01</div>
+                <h3>Start with the workload</h3>
+                <p>Choose algorithms and data structures from the actual access pattern. Complexity is a tool for reasoning, not a scorecard in isolation.</p>
+              </article>
+              <article class="principle">
+                <div class="principle-no">02</div>
+                <h3>Make the trade-off explicit</h3>
+                <p>Time, space, I/O, power, latency, and engineering complexity compete with one another. A good design states what it is optimizing.</p>
+              </article>
+              <article class="principle">
+                <div class="principle-no">03</div>
+                <h3>Design for verification</h3>
+                <p>Especially in consequential systems, correctness is not “the code looks right.” Build tests, invariants, review points, and failure handling into the design.</p>
+              </article>
+            </div>
+
+            <div class="statement">
+              <p><strong>AI changes implementation economics.</strong> The value shifts toward specifying the problem, decomposing the work, choosing the right tools, and knowing which parts require deep human review.</p>
+              <p><strong>Understanding still matters.</strong> Code you rely on should be explainable, modifiable, and predictable when it fails — whether it was typed by a person or generated by a model.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="experience" class="reveal">
+        <div class="section-grid">
+          <div class="section-index">03 / EXPERIENCE</div>
+          <div>
+            <h2 class="section-title">Research, engineering, teaching</h2>
+            <p class="section-lead">A career built around moving between computation and the real world — and teaching the fundamentals that make that movement possible.</p>
+
+            <div class="timeline">
+              <div class="timeline-row">
+                <div class="timeline-date">2019 — PRESENT</div>
+                <div>
+                  <h3 class="timeline-role">Staff Scientist · Computational Scientist &amp; Engineer</h3>
+                  <p class="timeline-org">National Institute of Mental Health · NIH</p>
+                  <p class="timeline-detail">Computational analysis, software design, algorithm development, and real-time sensing work across research problems in behavioral and neuroscience settings.</p>
+                </div>
+              </div>
+              <div class="timeline-row">
+                <div class="timeline-date">2023 — PRESENT</div>
+                <div>
+                  <h3 class="timeline-role">Visiting Professor · Biocomputational Engineering</h3>
+                  <p class="timeline-org">University of Maryland, College Park</p>
+                  <p class="timeline-detail">Teaching undergraduate-level C++ object-oriented programming in spring and algorithms in fall — helping students build a practical mental model of computation, data structures, and algorithmic reasoning.</p>
+                </div>
+              </div>
+              <div class="timeline-row">
+                <div class="timeline-date">2019</div>
+                <div>
+                  <h3 class="timeline-role">Postdoctoral Researcher</h3>
+                  <p class="timeline-org">University of Maryland School of Medicine</p>
+                  <p class="timeline-detail">Research spanning computational methods, machine learning, and neural/behavioral data analysis.</p>
+                </div>
+              </div>
+              <div class="timeline-row">
+                <div class="timeline-date">2015 — 2018</div>
+                <div>
+                  <h3 class="timeline-role">Ph.D. Research · Electrical &amp; Computer Engineering</h3>
+                  <p class="timeline-org">University of Maryland, College Park</p>
+                  <p class="timeline-detail">Research in dataflow-oriented signal processing, embedded computing, algorithm implementation, and hardware/software co-design.</p>
+                </div>
+              </div>
+              <div class="timeline-row">
+                <div class="timeline-date">2015 — 2018</div>
+                <div>
+                  <h3 class="timeline-role">Research Fellow</h3>
+                  <p class="timeline-org">U.S. Army Research Laboratory</p>
+                  <p class="timeline-detail">Real-time sensing, detection, and tracking systems under embedded and resource-constrained conditions.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="teaching">
+              <div class="teaching-copy">
+                <p><strong>Teaching at UMD:</strong> ENBC312 Object-Oriented Programming in C++ · ENBC322 Algorithms &amp; Data Structures</p>
+              </div>
+              <div class="teaching-badge">SPRING / FALL</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="links" class="reveal">
+        <div class="section-grid">
+          <div class="section-index">04 / LINKS</div>
+          <div>
+            <h2 class="section-title">Elsewhere</h2>
+            <p class="section-lead">The work lives in different places. Start with the one that matches what you want to inspect.</p>
+            <div class="links">
+              <a class="link" href="https://github.com/leekh3" target="_blank" rel="noreferrer">GitHub ↗</a>
+              <a class="link" href="https://www.linkedin.com/in/kyunghunlee3" target="_blank" rel="noreferrer">LinkedIn ↗</a>
+              <a class="link" href="https://www.nimh.nih.gov/research/research-conducted-at-nimh/research-areas/clinics-and-labs/edb/nnt/neuroscience-and-novel-therapeutics-unit-meet-the-team" target="_blank" rel="noreferrer">NIMH ↗</a>
+              <a class="link" href="https://biocomp.umd.edu/faculty-staff" target="_blank" rel="noreferrer">UMD ↗</a>
+              <a class="link" href="https://pubmed.ncbi.nlm.nih.gov/?term=Lee+Kyunghun%5BAuthor%5D" target="_blank" rel="noreferrer">PubMed · Author Search ↗</a>
+              <a class="link" href="https://www.researchgate.net/profile/Kyunghun-Lee" target="_blank" rel="noreferrer">ResearchGate · Publications ↗</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="reveal">
+        <div class="contact">
+          <div>
+            <h2>Good problems welcome.</h2>
+            <p>Research collaborations, engineering conversations, algorithms, software, or a hard systems problem worth thinking through.</p>
+          </div>
+          <div class="contact-actions">
+            <a class="email-link" href="mailto:hello@kyunghunlee.com">hello@kyunghunlee.com</a>
+          </div>
+        </div>
+      </section>
+
+      <footer>
+        <span>© <span id="year"></span> Kyunghun Lee</span>
+        <span>Built as a lightweight static site.</span>
+      </footer>
+    </div>
+  </main>
+
+  <script>
+    const root = document.documentElement;
+    const themeButton = document.getElementById('theme');
+    const savedTheme = localStorage.getItem('theme');
+    const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+    root.dataset.theme = savedTheme || (prefersDark ? 'dark' : 'light');
+
+    themeButton.addEventListener('click', () => {
+      const next = root.dataset.theme === 'dark' ? 'light' : 'dark';
+      root.dataset.theme = next;
+      localStorage.setItem('theme', next);
+      document.querySelector('meta[name="theme-color"]').setAttribute('content', next === 'dark' ? '#0b0c0a' : '#f7f7f2');
+    });
+
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    const revealObserver = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          revealObserver.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.08 });
+
+    document.querySelectorAll('.reveal').forEach((el) => revealObserver.observe(el));
+  </script>
+</body>
+</html>
