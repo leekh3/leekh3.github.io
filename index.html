@@ -131,6 +131,38 @@
     .statement p { margin: 0; color: var(--muted); font-size: 15px; }
     .statement strong { color: var(--ink); font-weight: 500; }
 
+
+    .work-visuals { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; margin: 0 0 36px; }
+    .visual-card {
+      position: relative; min-height: 220px; padding: 18px; overflow: hidden;
+      border: 1px solid var(--line); background: var(--paper);
+    }
+    .visual-label { font-family: var(--mono); font-size: 9px; letter-spacing: .08em; color: var(--faint); text-transform: uppercase; }
+    .visual-card svg { width: 100%; height: 180px; margin-top: 8px; overflow: visible; }
+    .visual-card .v-note { position: absolute; left: 18px; bottom: 15px; font-family: var(--mono); font-size: 9px; color: var(--faint); }
+    .visual-card .line { stroke: var(--line-strong); stroke-width: 1.2; fill: none; }
+    .visual-card .ink { stroke: var(--ink); stroke-width: 1.8; fill: none; }
+    .visual-card .soft { stroke: var(--faint); stroke-width: 1; fill: none; }
+    .visual-card .fill { fill: var(--ink); }
+    .visual-card .paper-fill { fill: var(--paper); stroke: var(--line-strong); stroke-width: 1.2; }
+    .visual-card text { fill: var(--muted); font-family: var(--mono); font-size: 8px; }
+    .visual-card text.dark { fill: var(--ink); }
+    .work-intro { margin-bottom: 32px; }
+    .thinking-visual {
+      margin: 0 0 34px; border-top: 1px solid var(--line); border-bottom: 1px solid var(--line);
+      display: grid; grid-template-columns: 1.1fr .9fr; min-height: 240px;
+    }
+    .thinking-diagram { padding: 18px 24px 20px 0; }
+    .thinking-notes { border-left: 1px solid var(--line); padding: 24px 0 24px 28px; display: flex; flex-direction: column; justify-content: center; gap: 16px; }
+    .thinking-notes div { display: flex; justify-content: space-between; gap: 18px; font-family: var(--mono); font-size: 10px; }
+    .thinking-notes span:first-child { color: var(--faint); }
+    .thinking-notes span:last-child { color: var(--ink); text-align: right; }
+    @media (max-width: 860px) {
+      .work-visuals { grid-template-columns: 1fr; }
+      .thinking-visual { grid-template-columns: 1fr; }
+      .thinking-notes { border-left: 0; border-top: 1px solid var(--line); padding: 22px 0; }
+    }
+
     .worklist { border-top: 1px solid var(--line); }
     .work-row {
       display: grid; grid-template-columns: 54px 190px 1fr 120px; gap: 24px; align-items: start;
@@ -241,7 +273,7 @@
         </div>
 
         <aside class="hero-meta">
-          <img class="portrait" src="https://leekh3.github.io/images/kyunghun.png" alt="Kyunghun Lee">
+          <img class="portrait" src="/images/profile.jpg" alt="Kyunghun Lee">
           <div class="meta-stack">
             <div class="meta-block">
               <div class="meta-label">Current</div>
@@ -267,6 +299,54 @@
           <div>
             <h2 class="section-title">A technical lens across layers</h2>
             <p class="section-lead">The interesting problems are rarely confined to one layer. I move between the algorithm, the data, the device, and the software — and try to keep the whole system legible.</p>
+
+
+            <div class="work-visuals" aria-label="Illustrative technical diagrams">
+              <div class="visual-card">
+                <div class="visual-label">01 · Dataflow</div>
+                <svg viewBox="0 0 420 180" role="img" aria-label="Data flows from sensor to algorithm to state">
+                  <rect class="paper-fill" x="10" y="48" width="92" height="48" rx="2"/>
+                  <text class="dark" x="56" y="68" text-anchor="middle">SENSOR</text>
+                  <text x="56" y="82" text-anchor="middle">stream</text>
+                  <rect class="paper-fill" x="164" y="36" width="92" height="72" rx="2"/>
+                  <text class="dark" x="210" y="62" text-anchor="middle">ALGORITHM</text>
+                  <text x="210" y="76" text-anchor="middle">filter · detect</text>
+                  <text x="210" y="90" text-anchor="middle">classify</text>
+                  <rect class="paper-fill" x="318" y="48" width="92" height="48" rx="2"/>
+                  <text class="dark" x="364" y="68" text-anchor="middle">STATE</text>
+                  <text x="364" y="82" text-anchor="middle">interpretable</text>
+                  <path class="ink" d="M102 72 H164"/>
+                  <path class="ink" d="M256 72 H318"/>
+                  <path class="line" d="M110 72 l-8 -5 M110 72 l-8 5 M272 72 l-8 -5 M272 72 l-8 5"/>
+                </svg>
+                <div class="v-note">continuous signal → computation → usable state</div>
+              </div>
+              <div class="visual-card">
+                <div class="visual-label">02 · System boundary</div>
+                <svg viewBox="0 0 420 180" role="img" aria-label="System diagram showing device, model, software, and verification boundaries">
+                  <rect class="line" x="24" y="28" width="136" height="118" rx="4"/>
+                  <text class="dark" x="92" y="50" text-anchor="middle">REAL WORLD</text>
+                  <rect class="paper-fill" x="48" y="66" width="88" height="28" rx="2"/>
+                  <text x="92" y="83" text-anchor="middle">device / data</text>
+                  <rect class="paper-fill" x="48" y="106" width="88" height="28" rx="2"/>
+                  <text x="92" y="123" text-anchor="middle">constraints</text>
+                  <rect class="line" x="186" y="28" width="136" height="118" rx="4"/>
+                  <text class="dark" x="254" y="50" text-anchor="middle">COMPUTE</text>
+                  <rect class="paper-fill" x="210" y="66" width="88" height="28" rx="2"/>
+                  <text x="254" y="83" text-anchor="middle">algorithm</text>
+                  <rect class="paper-fill" x="210" y="106" width="88" height="28" rx="2"/>
+                  <text x="254" y="123" text-anchor="middle">software</text>
+                  <rect class="line" x="348" y="28" width="48" height="118" rx="4"/>
+                  <text class="dark" x="372" y="50" text-anchor="middle">CHECK</text>
+                  <circle class="ink" cx="372" cy="84" r="12"/>
+                  <path class="ink" d="M366 84 l4 4 l8 -10"/>
+                  <text x="372" y="122" text-anchor="middle">tests</text>
+                  <path class="ink" d="M160 86 H186 M322 86 H348"/>
+                  <path class="line" d="M176 86 l-8 -5 M176 86 l-8 5 M338 86 l-8 -5 M338 86 l-8 5"/>
+                </svg>
+                <div class="v-note">design boundary → implementation → verification</div>
+              </div>
+            </div>
 
             <div class="worklist">
               <div class="work-row">
@@ -310,6 +390,35 @@
           <div>
             <h2 class="section-title">Engineering is constraint management</h2>
             <p class="section-lead">A theoretically elegant implementation is not automatically the right implementation. Hardware, data volume, latency, memory, reliability, and the cost of being wrong all change the answer.</p>
+
+
+            <div class="thinking-visual">
+              <div class="thinking-diagram">
+                <svg viewBox="0 0 620 210" role="img" aria-label="Engineering decision flow from workload to design to verification" style="width:100%;height:210px;">
+                  <text x="12" y="20" fill="var(--faint)" style="font-family:var(--mono);font-size:9px;">DECISION FLOW</text>
+                  <line class="line" x1="18" y1="62" x2="602" y2="62"/>
+                  <circle class="paper-fill" cx="72" cy="62" r="23"/>
+                  <text class="dark" x="72" y="59" text-anchor="middle">WORK</text><text x="72" y="71" text-anchor="middle">LOAD</text>
+                  <circle class="paper-fill" cx="216" cy="62" r="23"/>
+                  <text class="dark" x="216" y="59" text-anchor="middle">CONSTRAINTS</text><text x="216" y="71" text-anchor="middle">time · space</text>
+                  <circle class="paper-fill" cx="360" cy="62" r="23"/>
+                  <text class="dark" x="360" y="59" text-anchor="middle">DESIGN</text><text x="360" y="71" text-anchor="middle">algorithm</text>
+                  <circle class="paper-fill" cx="504" cy="62" r="23"/>
+                  <text class="dark" x="504" y="59" text-anchor="middle">VERIFY</text><text x="504" y="71" text-anchor="middle">invariants</text>
+                  <path class="ink" d="M95 62 H193 M239 62 H337 M383 62 H481"/>
+                  <path class="line" d="M182 62 l-8 -5 M182 62 l-8 5 M326 62 l-8 -5 M326 62 l-8 5 M470 62 l-8 -5 M470 62 l-8 5"/>
+                  <path class="soft" d="M504 88 C504 137 470 165 410 165 H216 C156 165 116 139 116 96"/>
+                  <path class="line" d="M116 96 l-5 9 M116 96 l8 3"/>
+                  <text x="310" y="188" text-anchor="middle">measure → revise → verify again</text>
+                </svg>
+              </div>
+              <div class="thinking-notes">
+                <div><span>OPTIMIZE</span><span>the right resource</span></div>
+                <div><span>CHOOSE</span><span>the right abstraction</span></div>
+                <div><span>EXPLAIN</span><span>why it is correct</span></div>
+                <div><span>RECOVER</span><span>when assumptions fail</span></div>
+              </div>
+            </div>
 
             <div class="principles">
               <article class="principle">
@@ -423,6 +532,7 @@
           </div>
           <div class="contact-actions">
             <a class="email-link" href="mailto:hello@kyunghunlee.com">hello@kyunghunlee.com</a>
+            <div class="small-note">professional contact</div>
           </div>
         </div>
       </section>
