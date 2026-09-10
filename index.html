@@ -19,6 +19,7 @@
       --line: #d9dbd2;
       --line-strong: #c9cbc1;
       --accent: #171812;
+      --panel: #f4f4ef;
       --max: 1180px;
       --mono: "DM Mono", ui-monospace, SFMono-Regular, Menlo, monospace;
       --sans: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
@@ -34,6 +35,7 @@
       --line: #2a2d27;
       --line-strong: #3b3e38;
       --accent: #f2f2ed;
+      --panel: #151613;
     }
 
     * { box-sizing: border-box; }
@@ -51,7 +53,7 @@
 
     a { color: inherit; text-decoration: none; }
     img { max-width: 100%; display: block; }
-    .shell { width: min(calc(100% - 48px), var(--max)); margin: 0 auto; }
+    .shell { width: min(calc(100% - 48px), 1520px); margin: 0 auto; }
 
     .topbar {
       position: sticky;
@@ -117,11 +119,11 @@
 
     section { border-bottom: 1px solid var(--line); }
     .section-grid {
-      display: grid; grid-template-columns: 240px 1fr; gap: 64px; padding: 94px 0;
+      display: grid; grid-template-columns: 1fr; gap: 0; padding: 104px 0;
     }
-    .section-index { font-family: var(--mono); font-size: 11px; color: var(--faint); padding-top: 5px; }
-    .section-title { font-size: 18px; font-weight: 500; margin: 0; letter-spacing: -.02em; }
-    .section-lead { font-size: 20px; line-height: 1.55; max-width: 820px; margin: 0 0 44px; letter-spacing: -.018em; }
+    .section-index { font-family: var(--mono); font-size: 11px; color: var(--faint); padding: 0 0 18px; letter-spacing: .04em; }
+    .section-title { font-size: clamp(22px, 2.2vw, 30px); font-weight: 500; margin: 0 0 10px; letter-spacing: -.025em; }
+    .section-lead { font-size: clamp(20px, 2.2vw, 26px); line-height: 1.48; max-width: 1080px; margin: 0 0 52px; letter-spacing: -.02em; }
 
     .statement {
       padding: 28px 0 0;
@@ -131,56 +133,63 @@
     .statement p { margin: 0; color: var(--muted); font-size: 15px; }
     .statement strong { color: var(--ink); font-weight: 500; }
 
-
-    .work-visuals { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; margin: 0 0 36px; }
+    .worklist { border-top: 1px solid var(--line); width: 100%; }
+    .work-visuals {
+      display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 22px;
+      margin: 0 0 52px;
+    }
     .visual-card {
-      position: relative; min-height: 220px; padding: 18px; overflow: hidden;
-      border: 1px solid var(--line); background: var(--paper);
+      border: 1px solid var(--line); background: var(--panel); padding: 24px;
+      min-height: 360px; display: flex; flex-direction: column; justify-content: space-between;
     }
-    .visual-label { font-family: var(--mono); font-size: 9px; letter-spacing: .08em; color: var(--faint); text-transform: uppercase; }
-    .visual-card svg { width: 100%; height: 180px; margin-top: 8px; overflow: visible; }
-    .visual-card .v-note { position: absolute; left: 18px; bottom: 15px; font-family: var(--mono); font-size: 9px; color: var(--faint); }
-    .visual-card .line { stroke: var(--line-strong); stroke-width: 1.2; fill: none; }
-    .visual-card .ink { stroke: var(--ink); stroke-width: 1.8; fill: none; }
-    .visual-card .soft { stroke: var(--faint); stroke-width: 1; fill: none; }
-    .visual-card .fill { fill: var(--ink); }
-    .visual-card .paper-fill { fill: var(--paper); stroke: var(--line-strong); stroke-width: 1.2; }
-    .visual-card text { fill: var(--muted); font-family: var(--mono); font-size: 8px; }
-    .visual-card text.dark { fill: var(--ink); }
-    .work-intro { margin-bottom: 32px; }
-    .thinking-visual {
-      margin: 0 0 34px; border-top: 1px solid var(--line); border-bottom: 1px solid var(--line);
-      display: grid; grid-template-columns: 1.1fr .9fr; min-height: 240px;
+    .visual-label {
+      font-family: var(--mono); font-size: 10px; color: var(--faint);
+      letter-spacing: .12em; text-transform: uppercase;
     }
-    .thinking-diagram { padding: 18px 24px 20px 0; }
-    .thinking-diagram .line { stroke: var(--line-strong); stroke-width: 1.2; fill: none; }
-    .thinking-diagram .ink { stroke: var(--ink); stroke-width: 1.6; fill: none; }
-    .thinking-diagram .soft { stroke: var(--faint); stroke-width: 1; fill: none; }
-    .thinking-diagram .paper-fill { fill: var(--paper); stroke: var(--line-strong); stroke-width: 1.2; }
-    .thinking-diagram .dark { fill: var(--ink); font-family: var(--mono); font-size: 8px; }
-    .thinking-diagram text { fill: var(--muted); font-family: var(--mono); font-size: 8px; }
-    .thinking-notes { border-left: 1px solid var(--line); padding: 24px 0 24px 28px; display: flex; flex-direction: column; justify-content: center; gap: 16px; }
-    .thinking-notes div { display: flex; justify-content: space-between; gap: 18px; font-family: var(--mono); font-size: 10px; }
-    .thinking-notes span:first-child { color: var(--faint); }
-    .thinking-notes span:last-child { color: var(--ink); text-align: right; }
-    @media (max-width: 860px) {
-      .work-visuals { grid-template-columns: 1fr; }
-      .thinking-visual { grid-template-columns: 1fr; }
-      .thinking-notes { border-left: 0; border-top: 1px solid var(--line); padding: 22px 0; }
+    .visual-title { margin-top: 10px; font-size: 18px; font-weight: 500; }
+    .visual-caption { margin: 18px 0 0; color: var(--muted); font-size: 12px; line-height: 1.6; }
+    .flow {
+      display: grid; grid-template-columns: 1fr auto 1fr auto 1fr; gap: 10px;
+      align-items: center; margin: 28px 0 10px;
     }
-
-    .worklist { border-top: 1px solid var(--line); }
+    .flow-box {
+      border: 1px solid var(--line-strong); min-height: 108px; padding: 14px;
+      display: flex; flex-direction: column; justify-content: center; gap: 6px;
+    }
+    .flow-box strong { font-size: 12px; font-weight: 500; }
+    .flow-box span { font-family: var(--mono); color: var(--faint); font-size: 9px; }
+    .flow-arrow { color: var(--faint); font-size: 22px; text-align: center; }
+    .boundary {
+      display: grid; grid-template-columns: 1fr 52px 1fr; align-items: stretch; gap: 10px;
+      margin: 28px 0 10px;
+    }
+    .boundary-group {
+      border: 1px solid var(--line-strong); padding: 14px; display: grid; gap: 10px;
+      align-content: center;
+    }
+    .boundary-group .subbox {
+      border: 1px solid var(--line); padding: 16px 12px; text-align: center;
+      font-family: var(--mono); font-size: 10px; color: var(--muted);
+    }
+    .boundary-check {
+      border: 1px solid var(--line-strong); display: grid; place-items: center;
+      font-family: var(--mono); font-size: 9px; color: var(--faint);
+    }
+    .check-mark {
+      width: 34px; height: 34px; border: 1px solid var(--line-strong); border-radius: 50%;
+      display: grid; place-items: center; color: var(--ink); font-size: 18px;
+    }
     .work-row {
-      display: grid; grid-template-columns: 54px 190px 1fr 120px; gap: 24px; align-items: start;
-      padding: 25px 0; border-bottom: 1px solid var(--line); transition: padding .2s var(--ease);
+      display: grid; grid-template-columns: 54px 220px 1fr 120px; gap: 28px; align-items: start;
+      padding: 28px 0; border-bottom: 1px solid var(--line); transition: padding .2s var(--ease);
     }
     .work-row:hover { padding-left: 8px; }
     .work-no { font-family: var(--mono); font-size: 11px; color: var(--faint); padding-top: 4px; }
     .work-name { font-size: 16px; font-weight: 500; }
-    .work-desc { color: var(--muted); font-size: 14px; max-width: 700px; }
+    .work-desc { color: var(--muted); font-size: 15px; max-width: 980px; line-height: 1.65; }
     .work-tag { font-family: var(--mono); font-size: 10px; color: var(--faint); text-align: right; padding-top: 4px; }
 
-    .principles { display: grid; grid-template-columns: repeat(3, 1fr); border-top: 1px solid var(--line); }
+    .principles { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); border-top: 1px solid var(--line); }
     .principle { padding: 28px 30px 0 0; min-height: 220px; }
     .principle + .principle { border-left: 1px solid var(--line); padding-left: 30px; }
     .principle-no { font-family: var(--mono); font-size: 10px; color: var(--faint); margin-bottom: 35px; }
@@ -188,7 +197,7 @@
     .principle p { margin: 0; color: var(--muted); font-size: 14px; line-height: 1.7; }
 
     .timeline { border-top: 1px solid var(--line); }
-    .timeline-row { display: grid; grid-template-columns: 180px 1fr; gap: 42px; padding: 28px 0; border-bottom: 1px solid var(--line); }
+    .timeline-row { display: grid; grid-template-columns: 160px 1fr; gap: 48px; padding: 28px 0; border-bottom: 1px solid var(--line); }
     .timeline-date { font-family: var(--mono); font-size: 11px; color: var(--faint); padding-top: 4px; }
     .timeline-role { margin: 0 0 5px; font-size: 17px; font-weight: 500; letter-spacing: -.02em; }
     .timeline-org { margin: 0 0 10px; font-size: 13px; color: var(--muted); }
@@ -207,7 +216,7 @@
     .link:hover { border-color: var(--ink); }
 
     .contact {
-      display: grid; grid-template-columns: 1fr auto; gap: 50px; align-items: end; padding: 100px 0 110px;
+      display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 80px; align-items: end; padding: 110px 0 120px;
     }
     .contact h2 { margin: 0 0 18px; font-size: clamp(36px, 5vw, 64px); line-height: 1; letter-spacing: -.055em; font-weight: 600; }
     .contact p { margin: 0; color: var(--muted); max-width: 670px; font-size: 17px; }
@@ -221,7 +230,7 @@
     .reveal.visible { opacity: 1; transform: none; }
 
     @media (max-width: 860px) {
-      .shell { width: min(calc(100% - 34px), var(--max)); }
+      .shell { width: min(calc(100% - 34px), 1520px); }
       .navlinks { display: none; }
       .hero { grid-template-columns: 1fr; gap: 54px; min-height: auto; padding: 84px 0 64px; }
       .hero-meta { border-left: 0; border-top: 1px solid var(--line); padding: 28px 0 0; display: grid; grid-template-columns: 112px 1fr; gap: 24px; }
@@ -232,6 +241,10 @@
       .section-index { padding-top: 0; }
       .statement { grid-template-columns: 1fr; gap: 22px; }
       .work-row { grid-template-columns: 36px 1fr; gap: 8px 16px; }
+      .work-visuals { grid-template-columns: 1fr; }
+      .flow { grid-template-columns: 1fr; }
+      .flow-arrow { transform: rotate(90deg); }
+      .boundary { grid-template-columns: 1fr; }
       .work-tag { display: none; }
       .work-desc { grid-column: 2; }
       .principles { grid-template-columns: 1fr; }
@@ -246,6 +259,72 @@
       html { scroll-behavior: auto; }
       .reveal { opacity: 1; transform: none; transition: none; }
       .work-row { transition: none; }
+    }
+
+    /* Lightbox Premium Styling */
+    .lightbox {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(11, 12, 10, 0.85);
+      backdrop-filter: blur(8px);
+      display: none;
+      place-items: center;
+      z-index: 1000;
+      opacity: 0;
+      transition: opacity 0.3s ease;
+    }
+    .lightbox.is-open {
+      display: grid;
+      opacity: 1;
+    }
+    .lightbox-panel {
+      background: var(--paper);
+      border: 1px solid var(--line-strong);
+      border-radius: 8px;
+      width: min(calc(100% - 32px), 800px);
+      padding: 32px;
+      box-shadow: 0 24px 60px rgba(0, 0, 0, 0.4);
+      transform: scale(0.95);
+      transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    .lightbox.is-open .lightbox-panel {
+      transform: scale(1);
+    }
+    .lightbox-top {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 24px;
+      border-bottom: 1px solid var(--line);
+      padding-bottom: 16px;
+    }
+    .lightbox-title {
+      font-size: 20px;
+      font-weight: 500;
+      margin: 0;
+    }
+    .lightbox-close {
+      background: none;
+      border: none;
+      font-size: 28px;
+      cursor: pointer;
+      color: var(--muted);
+      line-height: 1;
+    }
+    .lightbox-close:hover {
+      color: var(--ink);
+    }
+    .lightbox-visual .visual-card {
+      min-height: auto;
+      border: none;
+      background: transparent;
+      padding: 0;
+    }
+    .lightbox-visual .flow, .lightbox-visual .boundary {
+      margin: 40px 0;
     }
   </style>
 </head>
@@ -279,7 +358,7 @@
         </div>
 
         <aside class="hero-meta">
-          <img class="portrait" src="/images/profile.jpg" alt="Kyunghun Lee">
+          <img class="portrait" src="https://leekh3.github.io/images/kyunghun.png" alt="Kyunghun Lee">
           <div class="meta-stack">
             <div class="meta-block">
               <div class="meta-label">Current</div>
@@ -306,52 +385,40 @@
             <h2 class="section-title">A technical lens across layers</h2>
             <p class="section-lead">The interesting problems are rarely confined to one layer. I move between the algorithm, the data, the device, and the software — and try to keep the whole system legible.</p>
 
+            <div class="work-visuals">
+              <figure class="visual-card" tabindex="0" role="button" aria-label="Open visual in expanded view">
+                <div>
+                  <div class="visual-label">01 · DATAFLOW</div>
+                  <div class="visual-title">Continuous signal → usable state</div>
+                  <div class="flow" aria-label="Sensor stream to algorithm to state">
+                    <div class="flow-box"><strong>SENSOR</strong><span>stream</span></div>
+                    <div class="flow-arrow">→</div>
+                    <div class="flow-box"><strong>ALGORITHM</strong><span>filter · detect · classify</span></div>
+                    <div class="flow-arrow">→</div>
+                    <div class="flow-box"><strong>STATE</strong><span>interpretable</span></div>
+                  </div>
+                </div>
+                <figcaption class="visual-caption">continuous stream → computation → an interpretable state</figcaption>
+              </figure>
 
-            <div class="work-visuals" aria-label="Illustrative technical diagrams">
-              <div class="visual-card">
-                <div class="visual-label">01 · Dataflow</div>
-                <svg viewBox="0 0 420 180" role="img" aria-label="Data flows from sensor to algorithm to state">
-                  <rect class="paper-fill" x="10" y="48" width="92" height="48" rx="2"/>
-                  <text class="dark" x="56" y="68" text-anchor="middle">SENSOR</text>
-                  <text x="56" y="82" text-anchor="middle">stream</text>
-                  <rect class="paper-fill" x="164" y="36" width="92" height="72" rx="2"/>
-                  <text class="dark" x="210" y="62" text-anchor="middle">ALGORITHM</text>
-                  <text x="210" y="76" text-anchor="middle">filter · detect</text>
-                  <text x="210" y="90" text-anchor="middle">classify</text>
-                  <rect class="paper-fill" x="318" y="48" width="92" height="48" rx="2"/>
-                  <text class="dark" x="364" y="68" text-anchor="middle">STATE</text>
-                  <text x="364" y="82" text-anchor="middle">interpretable</text>
-                  <path class="ink" d="M102 72 H164"/>
-                  <path class="ink" d="M256 72 H318"/>
-                  <path class="line" d="M110 72 l-8 -5 M110 72 l-8 5 M272 72 l-8 -5 M272 72 l-8 5"/>
-                </svg>
-                <div class="v-note">continuous signal → computation → usable state</div>
-              </div>
-              <div class="visual-card">
-                <div class="visual-label">02 · System boundary</div>
-                <svg viewBox="0 0 420 180" role="img" aria-label="System diagram showing device, model, software, and verification boundaries">
-                  <rect class="line" x="24" y="28" width="136" height="118" rx="4"/>
-                  <text class="dark" x="92" y="50" text-anchor="middle">REAL WORLD</text>
-                  <rect class="paper-fill" x="48" y="66" width="88" height="28" rx="2"/>
-                  <text x="92" y="83" text-anchor="middle">device / data</text>
-                  <rect class="paper-fill" x="48" y="106" width="88" height="28" rx="2"/>
-                  <text x="92" y="123" text-anchor="middle">constraints</text>
-                  <rect class="line" x="186" y="28" width="136" height="118" rx="4"/>
-                  <text class="dark" x="254" y="50" text-anchor="middle">COMPUTE</text>
-                  <rect class="paper-fill" x="210" y="66" width="88" height="28" rx="2"/>
-                  <text x="254" y="83" text-anchor="middle">algorithm</text>
-                  <rect class="paper-fill" x="210" y="106" width="88" height="28" rx="2"/>
-                  <text x="254" y="123" text-anchor="middle">software</text>
-                  <rect class="line" x="348" y="28" width="48" height="118" rx="4"/>
-                  <text class="dark" x="372" y="50" text-anchor="middle">CHECK</text>
-                  <circle class="ink" cx="372" cy="84" r="12"/>
-                  <path class="ink" d="M366 84 l4 4 l8 -10"/>
-                  <text x="372" y="122" text-anchor="middle">tests</text>
-                  <path class="ink" d="M160 86 H186 M322 86 H348"/>
-                  <path class="line" d="M176 86 l-8 -5 M176 86 l-8 5 M338 86 l-8 -5 M338 86 l-8 5"/>
-                </svg>
-                <div class="v-note">design boundary → implementation → verification</div>
-              </div>
+              <figure class="visual-card" tabindex="0" role="button" aria-label="Open visual in expanded view">
+                <div>
+                  <div class="visual-label">02 · SYSTEM BOUNDARY</div>
+                  <div class="visual-title">Real-world constraints → verified computation</div>
+                  <div class="boundary" aria-label="Real world constraints to compute and verification">
+                    <div class="boundary-group">
+                      <div class="subbox">REAL WORLD<br><span>device / data</span></div>
+                      <div class="subbox">CONSTRAINTS<br><span>memory / latency / power</span></div>
+                    </div>
+                    <div class="boundary-check">→</div>
+                    <div class="boundary-group">
+                      <div class="subbox">COMPUTE<br><span>algorithm / software</span></div>
+                      <div class="subbox"><div class="check-mark">✓</div><span>tests / verification</span></div>
+                    </div>
+                  </div>
+                </div>
+                <figcaption class="visual-caption">design boundary → implementation → verification</figcaption>
+              </figure>
             </div>
 
             <div class="worklist">
@@ -386,6 +453,30 @@
                 <div class="work-tag">EMERGING</div>
               </div>
             </div>
+            <!-- NEW: LIVE INTERACTIVE SIGNAL PROCESSING PLAYGROUND (Pure CSS/JS) -->
+            <div class="playground-card reveal" style="margin-top: 40px; border: 1px solid var(--line-strong); background: var(--panel); padding: 32px; border-radius: 4px;">
+              <div class="visual-label" style="font-family: var(--mono); font-size: 10px; color: var(--faint); letter-spacing: .12em; text-transform: uppercase; margin-bottom: 12px;">Interactive Demo</div>
+              <h3 style="margin: 0 0 8px; font-size: 20px; font-weight: 500;">Live Algorithm Sandbox: Real-time Signal Filtering</h3>
+              <p style="color: var(--muted); font-size: 14px; margin-bottom: 24px; max-width: 800px;">
+                Experience on-device signal processing. Toggle the noise frequency below to see how a real-time low-pass dataflow filter extracts the clean biological signature in real-time.
+              </p>
+              
+              <div style="display: flex; flex-wrap: wrap; gap: 16px; margin-bottom: 24px;">
+                <button class="theme" id="btn-low-noise" style="width: auto; height: auto; padding: 8px 16px; border-radius: 4px; font-size: 12px; font-weight: 500;">Clean Pulse (1Hz)</button>
+                <button class="theme" id="btn-high-noise" style="width: auto; height: auto; padding: 8px 16px; border-radius: 4px; font-size: 12px; font-weight: 500; opacity: 0.6;">Noisy Stream (1Hz + 15Hz Noise)</button>
+              </div>
+
+              <div style="position: relative; height: 160px; background: var(--bg); border: 1px solid var(--line); border-radius: 4px; overflow: hidden; display: flex; align-items: center;">
+                <svg id="signal-svg" width="100%" height="100%" style="position: absolute; top: 0; left: 0; pointer-events: none;">
+                  <path id="raw-signal-path" fill="none" stroke="var(--faint)" stroke-width="1.5" stroke-dasharray="3,3" />
+                  <path id="filtered-signal-path" fill="none" stroke="var(--ink)" stroke-width="2.5" />
+                </svg>
+                <div style="position: absolute; bottom: 8px; right: 12px; font-family: var(--mono); font-size: 10px; color: var(--faint); display: flex; gap: 16px;">
+                  <span style="display: flex; align-items: center; gap: 6px;"><span style="display: inline-block; width: 10px; height: 1px; border-bottom: 2px dashed var(--faint);"></span> Raw Signal</span>
+                  <span style="display: flex; align-items: center; gap: 6px;"><span style="display: inline-block; width: 10px; height: 2px; background: var(--ink);"></span> Filtered State (C++ Kernel)</span>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -396,45 +487,6 @@
           <div>
             <h2 class="section-title">Engineering is constraint management</h2>
             <p class="section-lead">A theoretically elegant implementation is not automatically the right implementation. Hardware, data volume, latency, memory, reliability, and the cost of being wrong all change the answer.</p>
-
-
-            <div class="thinking-visual">
-              <div class="thinking-diagram">
-                <svg viewBox="0 0 620 210" role="img" aria-label="Engineering decision flow from workload to design to verification" style="width:100%;height:210px;">
-                  <text x="12" y="20" fill="var(--faint)" style="font-family:var(--mono);font-size:9px;">DECISION FLOW</text>
-                  <line class="line" x1="18" y1="74" x2="602" y2="74"/>
-
-                  <rect class="paper-fill" x="24" y="50" rx="8" width="110" height="48"/>
-                  <text class="dark" x="79" y="70" text-anchor="middle">WORKLOAD</text>
-                  <text x="79" y="84" text-anchor="middle">data · traffic · use</text>
-
-                  <rect class="paper-fill" x="174" y="50" rx="8" width="110" height="48"/>
-                  <text class="dark" x="229" y="70" text-anchor="middle">CONSTRAINTS</text>
-                  <text x="229" y="84" text-anchor="middle">time · space · risk</text>
-
-                  <rect class="paper-fill" x="324" y="50" rx="8" width="110" height="48"/>
-                  <text class="dark" x="379" y="70" text-anchor="middle">DESIGN</text>
-                  <text x="379" y="84" text-anchor="middle">algorithm · structure</text>
-
-                  <rect class="paper-fill" x="474" y="50" rx="8" width="110" height="48"/>
-                  <text class="dark" x="529" y="70" text-anchor="middle">VERIFY</text>
-                  <text x="529" y="84" text-anchor="middle">tests · invariants</text>
-
-                  <path class="ink" d="M134 74 H174 M284 74 H324 M434 74 H474"/>
-                  <path class="line" d="M169 74 l-7 -5 M169 74 l-7 5 M319 74 l-7 -5 M319 74 l-7 5 M469 74 l-7 -5 M469 74 l-7 5"/>
-
-                  <path class="soft" d="M529 101 C529 142 496 165 430 165 H190 C128 165 92 142 92 103"/>
-                  <path class="line" d="M92 103 l-6 8 M92 103 l9 3"/>
-                  <text x="310" y="188" text-anchor="middle">measure → revise → verify again</text>
-                </svg>
-              </div>
-              <div class="thinking-notes">
-                <div><span>OPTIMIZE</span><span>the right resource</span></div>
-                <div><span>CHOOSE</span><span>the right abstraction</span></div>
-                <div><span>EXPLAIN</span><span>why it is correct</span></div>
-                <div><span>RECOVER</span><span>when assumptions fail</span></div>
-              </div>
-            </div>
 
             <div class="principles">
               <article class="principle">
@@ -548,7 +600,6 @@
           </div>
           <div class="contact-actions">
             <a class="email-link" href="mailto:hello@kyunghunlee.com">hello@kyunghunlee.com</a>
-            <div class="small-note">professional contact</div>
           </div>
         </div>
       </section>
@@ -559,6 +610,16 @@
       </footer>
     </div>
   </main>
+
+  <div class="lightbox" id="visualLightbox" aria-hidden="true">
+    <div class="lightbox-panel" role="dialog" aria-modal="true" aria-labelledby="lightboxTitle">
+      <div class="lightbox-top">
+        <h2 class="lightbox-title" id="lightboxTitle">Expanded visual</h2>
+        <button class="lightbox-close" id="lightboxClose" type="button" aria-label="Close expanded visual">×</button>
+      </div>
+      <div class="lightbox-visual" id="lightboxVisual"></div>
+    </div>
+  </div>
 
   <script>
     const root = document.documentElement;
@@ -576,6 +637,54 @@
 
     document.getElementById('year').textContent = new Date().getFullYear();
 
+    // Visual lightbox / smooth zoom
+    const visualLightbox = document.getElementById('visualLightbox');
+    const lightboxVisual = document.getElementById('lightboxVisual');
+    const lightboxTitle = document.getElementById('lightboxTitle');
+    const lightboxClose = document.getElementById('lightboxClose');
+    const visualCards = document.querySelectorAll('.visual-card');
+    let activeVisual = null;
+
+    function openVisual(card) {
+      activeVisual = card;
+      const clone = card.cloneNode(true);
+      clone.removeAttribute('tabindex');
+      clone.removeAttribute('role');
+      clone.removeAttribute('aria-label');
+      lightboxVisual.replaceChildren(clone);
+      lightboxTitle.textContent = card.querySelector('.visual-title')?.textContent?.trim() || 'Expanded visual';
+      visualLightbox.classList.add('is-open');
+      visualLightbox.setAttribute('aria-hidden', 'false');
+      document.body.style.overflow = 'hidden';
+      lightboxClose.focus();
+    }
+
+    function closeVisual() {
+      visualLightbox.classList.remove('is-open');
+      visualLightbox.setAttribute('aria-hidden', 'true');
+      document.body.style.overflow = '';
+      if (activeVisual) activeVisual.focus();
+      activeVisual = null;
+    }
+
+    visualCards.forEach((card) => {
+      card.addEventListener('click', () => openVisual(card));
+      card.addEventListener('keydown', (event) => {
+        if (event.key === 'Enter' || event.key === ' ') {
+          event.preventDefault();
+          openVisual(card);
+        }
+      });
+    });
+
+    lightboxClose.addEventListener('click', closeVisual);
+    visualLightbox.addEventListener('click', (event) => {
+      if (event.target === visualLightbox) closeVisual();
+    });
+    document.addEventListener('keydown', (event) => {
+      if (event.key === 'Escape' && visualLightbox.classList.contains('is-open')) closeVisual();
+    });
+
     const revealObserver = new IntersectionObserver((entries) => {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
@@ -586,6 +695,70 @@
     }, { threshold: 0.08 });
 
     document.querySelectorAll('.reveal').forEach((el) => revealObserver.observe(el));
+
+    // Interactive Signal Filtering Playground JS
+    const rawPath = document.getElementById('raw-signal-path');
+    const filteredPath = document.getElementById('filtered-signal-path');
+    const btnLowNoise = document.getElementById('btn-low-noise');
+    const btnHighNoise = document.getElementById('btn-high-noise');
+    
+    let noiseMode = 'low'; // 'low' or 'high'
+    let animationFrameId;
+    let t = 0;
+
+    function generateSignalPoints() {
+      const width = 800;
+      const height = 160;
+      const pointsRaw = [];
+      const pointsFiltered = [];
+      
+      for (let x = 0; x <= width; x += 4) {
+        const theta = (x / width) * Math.PI * 8 + t;
+        
+        // Base low frequency biological signal (1Hz component)
+        const baseSignal = Math.sin(theta) * 35;
+        
+        // Noise component
+        let noise = 0;
+        if (noiseMode === 'high') {
+          // High-frequency 15Hz component noise
+          noise = Math.sin(theta * 15) * 12 + Math.cos(theta * 24) * 5;
+        } else {
+          noise = Math.sin(theta * 8) * 1.5; // negligible sensor hum
+        }
+        
+        const yRaw = (height / 2) + baseSignal + noise;
+        
+        // Simulating DSP Low-Pass Filtering
+        const yFiltered = (height / 2) + baseSignal; 
+        
+        pointsRaw.push(`${x},${yRaw}`);
+        pointsFiltered.push(`${x},${yFiltered}`);
+      }
+      
+      rawPath.setAttribute('d', `M ${pointsRaw.join(' L ')}`);
+      filteredPath.setAttribute('d', `M ${pointsFiltered.join(' L ')}`);
+    }
+
+    function animate() {
+      t += 0.04;
+      generateSignalPoints();
+      animationFrameId = requestAnimationFrame(animate);
+    }
+
+    btnLowNoise.addEventListener('click', () => {
+      noiseMode = 'low';
+      btnLowNoise.style.opacity = '1';
+      btnHighNoise.style.opacity = '0.6';
+    });
+
+    btnHighNoise.addEventListener('click', () => {
+      noiseMode = 'high';
+      btnHighNoise.style.opacity = '1';
+      btnLowNoise.style.opacity = '0.6';
+    });
+
+    animate();
   </script>
 </body>
 </html>
