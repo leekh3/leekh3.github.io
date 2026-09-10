@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="Kyunghun Lee, Ph.D. — Computational Scientist & Engineer. Staff Scientist at NIMH and Visiting Professor at the University of Maryland.">
   <title>Kyunghun Lee — Computational Scientist & Engineer</title>
-  <meta name="theme-color" content="#f7f7f2">
+  <meta name="theme-color" content="#0b0c0a">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -189,6 +189,21 @@
     .work-desc { color: var(--muted); font-size: 15px; max-width: 980px; line-height: 1.65; }
     .work-tag { font-family: var(--mono); font-size: 10px; color: var(--faint); text-align: right; padding-top: 4px; }
 
+
+    .featured-list { border-top: 1px solid var(--line); }
+    .featured-project {
+      display: grid; grid-template-columns: 54px 1fr 72px; gap: 28px; align-items: start;
+      padding: 36px 0; border-bottom: 1px solid var(--line); transition: background .2s var(--ease), padding .2s var(--ease);
+    }
+    .featured-project:hover { padding-left: 10px; background: color-mix(in srgb, var(--panel) 45%, transparent); }
+    .featured-number { font-family: var(--mono); font-size: 11px; color: var(--faint); padding-top: 4px; }
+    .featured-meta { font-family: var(--mono); font-size: 10px; color: var(--faint); letter-spacing: .08em; margin-bottom: 10px; }
+    .featured-project h3 { margin: 0 0 10px; font-size: clamp(24px, 3vw, 34px); line-height: 1.08; font-weight: 500; letter-spacing: -.03em; }
+    .featured-project p { margin: 0; max-width: 900px; color: var(--muted); font-size: 15px; line-height: 1.7; }
+    .featured-stack { display: flex; flex-wrap: wrap; gap: 9px 14px; margin-top: 18px; }
+    .featured-stack span { font-family: var(--mono); font-size: 10px; color: var(--muted); border-bottom: 1px solid var(--line); padding-bottom: 3px; }
+    .featured-aside { font-family: var(--mono); font-size: 10px; color: var(--faint); text-align: right; padding-top: 4px; }
+
     .principles { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); border-top: 1px solid var(--line); }
     .principle { padding: 28px 30px 0 0; min-height: 220px; }
     .principle + .principle { border-left: 1px solid var(--line); padding-left: 30px; }
@@ -216,7 +231,7 @@
     .link:hover { border-color: var(--ink); }
 
     .contact {
-      display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 80px; align-items: end; padding: 110px 0 120px;
+      display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 80px; align-items: center; padding: 110px 0 120px;
     }
     .contact h2 { margin: 0 0 18px; font-size: clamp(36px, 5vw, 64px); line-height: 1; letter-spacing: -.055em; font-weight: 600; }
     .contact p { margin: 0; color: var(--muted); max-width: 670px; font-size: 17px; }
@@ -247,6 +262,8 @@
       .boundary { grid-template-columns: 1fr; }
       .work-tag { display: none; }
       .work-desc { grid-column: 2; }
+      .featured-project { grid-template-columns: 36px 1fr; gap: 8px 16px; }
+      .featured-aside { display: none; }
       .principles { grid-template-columns: 1fr; }
       .principle, .principle + .principle { border-left: 0; border-top: 1px solid var(--line); padding: 28px 0; min-height: auto; }
       .principle:first-child { border-top: 0; }
@@ -335,7 +352,8 @@
       <div class="nav-right">
         <nav class="navlinks" aria-label="Primary navigation">
           <a href="#work">Work</a>
-          <a href="#thinking">Thinking</a>
+          <a href="#projects">Projects</a>
+            <a href="#thinking">Thinking</a>
           <a href="#experience">Experience</a>
           <a href="#links">Links</a>
           <a href="#contact">Contact</a>
@@ -431,13 +449,13 @@
               <div class="work-row">
                 <div class="work-no">02</div>
                 <div class="work-name">Scientific Software</div>
-                <div class="work-desc">Turning research questions into maintainable software — from computational analysis and prototypes to tools that can be used repeatedly and explained clearly.</div>
+                <div class="work-desc">Turning research requirements into maintainable software and applications — from computational analysis and prototypes to mobile, desktop, and research tools that can be deployed, reused, tested, and explained clearly.</div>
                 <div class="work-tag">SYSTEMS</div>
               </div>
               <div class="work-row">
                 <div class="work-no">03</div>
                 <div class="work-name">Real-time &amp; Edge</div>
-                <div class="work-desc">Working under device, memory, latency, power, and data-stream constraints, with wearable and embedded systems as real-world testbeds.</div>
+                <div class="work-desc">Building real-time and mobile systems under device, memory, latency, power, and streaming-data constraints, with wearable and embedded platforms as real-world testbeds.</div>
                 <div class="work-tag">PHYSICAL</div>
               </div>
               <div class="work-row">
@@ -481,9 +499,59 @@
         </div>
       </section>
 
+
+      <section id="projects" class="reveal featured-section">
+        <div class="section-grid">
+          <div class="section-index">02 / FEATURED WORK</div>
+          <div>
+            <h2 class="section-title">Selected systems, not just papers.</h2>
+            <p class="section-lead">Selected work spanning applied machine learning, mobile and real-time software, and resource-aware systems engineering — with an emphasis on turning research requirements into reliable, maintainable implementations.</p>
+
+            <div class="featured-list">
+              <article class="featured-project">
+                <div class="featured-number">01</div>
+                <div class="featured-main">
+                  <div class="featured-meta">OPEN SOURCE · AUDIO ML · PYTORCH</div>
+                  <h3>Infant Cry Detection in Daylong Audio</h3>
+                  <p>An end-to-end machine-learning pipeline for detecting infant crying in daylong naturalistic recordings — integrating signal preprocessing, learned audio representations, classical acoustic features, multiple classifier families, and reproducible subject-level evaluation into an open, inspectable research codebase.</p>
+                  <div class="featured-stack"><span>PyTorch</span><span>Wav2Vec 2.0</span><span>MFCC / spectral features</span><span>CNN · SVM · boosting</span></div>
+                  <div class="featured-actions" style="display:flex;flex-wrap:wrap;gap:16px;margin-top:20px;font-family:var(--mono);font-size:11px;">
+                    <a class="link" href="https://github.com/EDB-Accelerator/Infant-Crying-Detection" target="_blank" rel="noreferrer">View project on GitHub ↗</a>
+                    <a class="link" href="https://doi.org/10.1177/10731911251395993" target="_blank" rel="noreferrer">Read publication ↗</a>
+                  </div>
+                </div>
+                <div class="featured-aside">01 / 03</div>
+              </article>
+
+              <article class="featured-project">
+                <div class="featured-number">02</div>
+                <div class="featured-main">
+                  <div class="featured-meta">AI / ML · NEURAL DATA · COMPUTATION</div>
+                  <h3>Neural &amp; behavioral decoding</h3>
+                  <p>Computational methods for extracting structure from high-dimensional neural and behavioral data, connecting statistical modeling and machine learning with reproducible analysis pipelines and interpretable scientific outputs.</p>
+                  <div class="featured-stack"><span>machine learning</span><span>neural decoding</span><span>multimodal data</span><span>statistical modeling</span></div>
+                </div>
+                <div class="featured-aside">02 / 03</div>
+              </article>
+
+              <article class="featured-project">
+                <div class="featured-number">03</div>
+                <div class="featured-main">
+                  <div class="featured-meta">DATAFLOW · MOBILE · REAL-TIME SYSTEMS</div>
+                  <h3>Dataflow applications &amp; mobile systems</h3>
+                  <p>End-to-end application engineering that carries algorithms from dataflow and signal-processing models into usable software — including mobile development, real-time sensing, device integration, and implementations shaped by memory, latency, power, and hardware constraints.</p>
+                  <div class="featured-stack"><span>mobile development</span><span>dataflow systems</span><span>real-time sensing</span><span>embedded computing</span><span>hardware/software co-design</span></div>
+                </div>
+                <div class="featured-aside">03 / 03</div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <section id="thinking" class="reveal">
         <div class="section-grid">
-          <div class="section-index">02 / THINKING</div>
+          <div class="section-index">03 / THINKING</div>
           <div>
             <h2 class="section-title">Engineering is constraint management</h2>
             <p class="section-lead">A theoretically elegant implementation is not automatically the right implementation. Hardware, data volume, latency, memory, reliability, and the cost of being wrong all change the answer.</p>
@@ -516,7 +584,7 @@
 
       <section id="experience" class="reveal">
         <div class="section-grid">
-          <div class="section-index">03 / EXPERIENCE</div>
+          <div class="section-index">04 / EXPERIENCE</div>
           <div>
             <h2 class="section-title">Research, engineering, teaching</h2>
             <p class="section-lead">A career built around moving between computation and the real world — and teaching the fundamentals that make that movement possible.</p>
@@ -576,7 +644,7 @@
 
       <section id="links" class="reveal">
         <div class="section-grid">
-          <div class="section-index">04 / LINKS</div>
+          <div class="section-index">05 / LINKS</div>
           <div>
             <h2 class="section-title">Elsewhere</h2>
             <p class="section-lead">The work lives in different places. Start with the one that matches what you want to inspect.</p>
