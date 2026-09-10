@@ -153,6 +153,12 @@
       display: grid; grid-template-columns: 1.1fr .9fr; min-height: 240px;
     }
     .thinking-diagram { padding: 18px 24px 20px 0; }
+    .thinking-diagram .line { stroke: var(--line-strong); stroke-width: 1.2; fill: none; }
+    .thinking-diagram .ink { stroke: var(--ink); stroke-width: 1.6; fill: none; }
+    .thinking-diagram .soft { stroke: var(--faint); stroke-width: 1; fill: none; }
+    .thinking-diagram .paper-fill { fill: var(--paper); stroke: var(--line-strong); stroke-width: 1.2; }
+    .thinking-diagram .dark { fill: var(--ink); font-family: var(--mono); font-size: 8px; }
+    .thinking-diagram text { fill: var(--muted); font-family: var(--mono); font-size: 8px; }
     .thinking-notes { border-left: 1px solid var(--line); padding: 24px 0 24px 28px; display: flex; flex-direction: column; justify-content: center; gap: 16px; }
     .thinking-notes div { display: flex; justify-content: space-between; gap: 18px; font-family: var(--mono); font-size: 10px; }
     .thinking-notes span:first-child { color: var(--faint); }
@@ -396,19 +402,29 @@
               <div class="thinking-diagram">
                 <svg viewBox="0 0 620 210" role="img" aria-label="Engineering decision flow from workload to design to verification" style="width:100%;height:210px;">
                   <text x="12" y="20" fill="var(--faint)" style="font-family:var(--mono);font-size:9px;">DECISION FLOW</text>
-                  <line class="line" x1="18" y1="62" x2="602" y2="62"/>
-                  <circle class="paper-fill" cx="72" cy="62" r="23"/>
-                  <text class="dark" x="72" y="59" text-anchor="middle">WORK</text><text x="72" y="71" text-anchor="middle">LOAD</text>
-                  <circle class="paper-fill" cx="216" cy="62" r="23"/>
-                  <text class="dark" x="216" y="59" text-anchor="middle">CONSTRAINTS</text><text x="216" y="71" text-anchor="middle">time · space</text>
-                  <circle class="paper-fill" cx="360" cy="62" r="23"/>
-                  <text class="dark" x="360" y="59" text-anchor="middle">DESIGN</text><text x="360" y="71" text-anchor="middle">algorithm</text>
-                  <circle class="paper-fill" cx="504" cy="62" r="23"/>
-                  <text class="dark" x="504" y="59" text-anchor="middle">VERIFY</text><text x="504" y="71" text-anchor="middle">invariants</text>
-                  <path class="ink" d="M95 62 H193 M239 62 H337 M383 62 H481"/>
-                  <path class="line" d="M182 62 l-8 -5 M182 62 l-8 5 M326 62 l-8 -5 M326 62 l-8 5 M470 62 l-8 -5 M470 62 l-8 5"/>
-                  <path class="soft" d="M504 88 C504 137 470 165 410 165 H216 C156 165 116 139 116 96"/>
-                  <path class="line" d="M116 96 l-5 9 M116 96 l8 3"/>
+                  <line class="line" x1="18" y1="74" x2="602" y2="74"/>
+
+                  <rect class="paper-fill" x="24" y="50" rx="8" width="110" height="48"/>
+                  <text class="dark" x="79" y="70" text-anchor="middle">WORKLOAD</text>
+                  <text x="79" y="84" text-anchor="middle">data · traffic · use</text>
+
+                  <rect class="paper-fill" x="174" y="50" rx="8" width="110" height="48"/>
+                  <text class="dark" x="229" y="70" text-anchor="middle">CONSTRAINTS</text>
+                  <text x="229" y="84" text-anchor="middle">time · space · risk</text>
+
+                  <rect class="paper-fill" x="324" y="50" rx="8" width="110" height="48"/>
+                  <text class="dark" x="379" y="70" text-anchor="middle">DESIGN</text>
+                  <text x="379" y="84" text-anchor="middle">algorithm · structure</text>
+
+                  <rect class="paper-fill" x="474" y="50" rx="8" width="110" height="48"/>
+                  <text class="dark" x="529" y="70" text-anchor="middle">VERIFY</text>
+                  <text x="529" y="84" text-anchor="middle">tests · invariants</text>
+
+                  <path class="ink" d="M134 74 H174 M284 74 H324 M434 74 H474"/>
+                  <path class="line" d="M169 74 l-7 -5 M169 74 l-7 5 M319 74 l-7 -5 M319 74 l-7 5 M469 74 l-7 -5 M469 74 l-7 5"/>
+
+                  <path class="soft" d="M529 101 C529 142 496 165 430 165 H190 C128 165 92 142 92 103"/>
+                  <path class="line" d="M92 103 l-6 8 M92 103 l9 3"/>
                   <text x="310" y="188" text-anchor="middle">measure → revise → verify again</text>
                 </svg>
               </div>
